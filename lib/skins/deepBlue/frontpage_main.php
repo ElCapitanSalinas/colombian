@@ -25,9 +25,6 @@
         <div class="card w-175">
         <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Noticias Relevantes</font></b></h5>
         <div class="card-body">
-        <div class="alert alert-success" role="alert">
-        Admisiones Abiertas <a href="#"> Click aquí </a>para más información 
-      </div>
               <p class="card-text"><?php
 
           // Show the News module, call the function ShowNewsFront
