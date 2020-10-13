@@ -8,7 +8,7 @@
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-user" fa-lg style="color:#FFFFFF"></i> Registro</font></b></h5>
         <div class="card-body">
 		<p align="center">
-		<p>Welcome to the registration form for <?php echo SITE_NAME; ?>. After you register, you will be notified by a staff member about your membership.</p>
+		<p>Bienvenido al formulario de registro <?php echo SITE_NAME; ?>. Despues del registro, será notificado por un miembro del staff acerca de su proceso de entrada, revise repetidamente su correo.</p>
 			<form method="post" action="<?php echo url('/registration');?>">
 			<dl>
 				<dt>Nombre: *</dt>
@@ -105,7 +105,7 @@
 				</dd>
 
 				<dt></dt>
-				<dd><p>By clicking register, you're agreeing to the terms and conditions</p></dd>
+				<dd><p>Al dar registrar, aceptas las consignas del MGO</p></dd>
 				<dt></dt>
 				<dd><input type="submit" name="submit" class="btn btn-success" value="Registrar" /></dd>
 			</dl>
@@ -115,12 +115,3 @@
   </div>
 	</div>
 </section>
-
-
-<section class="page-contents">
-<div class="container">
-<?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
-<h3>Registration</h3>
-</div>
-</section>
-
