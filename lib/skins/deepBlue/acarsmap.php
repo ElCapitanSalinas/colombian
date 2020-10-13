@@ -37,20 +37,19 @@
 */
 ?>
 var acars_map_defaults = {
-autozoom: false,
-         styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#131313"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#094981"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0C336E"},{"visibility":"on"}]}], // <-- ADD THIS
+autozoom: true,
+        styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#131313"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#094981"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0C336E"},{"visibility":"on"}]}], // <-- ADD THIS
 zoom: 4,
-         center: new google.maps.LatLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
-         mapTypeId: google.maps.MapTypeId.TERRAIN,
-         refreshTime: 10000
 
-		 };
-
-
+    center: new google.maps.LatLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
+    refreshTime: 10000
+};
 </script>
 <div class="mapcenter" align="center">
-	<div id="acarsmap" style="width:400px; height: <?php echo Config::Get('MAP_HEIGHT')?>"></div>
+	<div id="acarsmap" style="width:<?php echo  Config::Get('MAP_WIDTH');?>; height: <?php echo Config::Get('MAP_HEIGHT')?>"></div>
 </div>
+	
 <?php
 /* See below for details and columns you can use in this table */
 ?>
@@ -58,18 +57,19 @@ zoom: 4,
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="deepBlue_table">
 <thead>
 	<tr>
-		<th>Pilot</th>
-		<th>Flight</th>
-		<th>Dep</th>
-		<th>Arrival</th>
-		<th>Status</th>
+		<th>Piloto</th>
+		<th>Vuelo</th>
+		<th>Salida</th>
+		<th>Llegada</th>
+		<th>Estado</th>
 		<th>Alt</th>
-		<th>Distance/Time</th>
+		<th>Distancia/Tiempo</th>
 	</tr>
 </thead>
 <tbody id="pilotlist"></tbody>
 </table>
-<script type="text/javascript" src="<?php echo fileurl('/lib/js/acarsmap.js');?>"></script>
+<script src="<?php echo SITE_URL?>/lib/js/base_map.js"></script>
+<script src="<?php echo SITE_URL?>/lib/js/acarsmap.js"></script>
 <?php
 /* This is the template which is used in the table above, for each row. 
 	Be careful modifying it. You can simply add/remove columns, combine 
