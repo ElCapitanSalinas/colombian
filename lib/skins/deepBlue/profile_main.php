@@ -17,8 +17,7 @@ if(!$pilot) {
                         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><center> <i class="fa fa-user" fa-lg style="color:#FFFFFF"></i> Avatar </center></font></b></h5>
                         <div class="card-body">
                         <center>
-                        <img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>"width="128"height="128"class="img-circle"/><br />
-                        <img src="<?php echo $userinfo->rankimage?>"  alt="" />
+                        <img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>"width="256"height="256"class="img-circle"/><br /
                         </center>
                         </div>
                 </div>
@@ -26,8 +25,9 @@ if(!$pilot) {
         <div class="col-lg-4">
         <center><div class="alert alert-success" role="alert">
 <center>Tienes <a href="#" class="alert-link"><?php echo FinanceData::FormatMoney($userinfo->totalpay) ?></a> Dólares en tu banco!.</center>
+
 </div></center>
-        </div>
+       <center><img src="<?php echo $userinfo->rankimage?>"  alt="" /> </div></center>
 </div>
 </div>
 

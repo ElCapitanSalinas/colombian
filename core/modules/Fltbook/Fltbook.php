@@ -174,21 +174,9 @@ class Fltbook extends CodonModule {
 		CodonEvent::Dispatch('bid_added', 'Schedules', $routeid, $aircraftid);
 
 		if($ret == true) {
-			echo '<br><div class="card text-white bg-success mb-12"">
-			<div class="card-header"><strong>Añadido!</strong></div>
-			<div class="card-body">
-			  <h5 class="card-title">El vuelo ha sido añadido a tu agenda</h5>
-			  <p class="card-text">Puedes volar desde el sistema de ACARS cuando puedas.</p>
-			</div>
-		  </div>';
+			echo 'Bid Added!';
 		} else {
-			echo '<br><div class="card text-white bg-danger mb-12"">
-			<div class="card-header"><strong>El vuelo ya se encuentra en tu agenda</strong></div>
-			<div class="card-body">
-			  <h5 class="card-title">Verifica los detalles.</h5>
-			  <p class="card-text">Puedes volar desde el sistema de ACARS cuando puedas.</p>
-			</div>
-		  </div>';
+			echo 'Already In Bids!';
 		}
 	}
 

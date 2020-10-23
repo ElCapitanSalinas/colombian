@@ -111,8 +111,8 @@ Config::Set('DISABLE_SCHED_ON_BID', true);
 Config::Set('DISABLE_BIDS_ON_BID', false);
 
 # Whether to close any bids after a certain amount of time
-Config::Set('CLOSE_BIDS_AFTER_EXPIRE', true);
-Config::Set('BID_EXPIRE_TIME', '24'); # How many hours to hold bids for
+Config::Set('CLOSE_BIDS_AFTER_EXPIRE', false);
+Config::Set('BID_EXPIRE_TIME', '48'); # How many hours to hold bids for
 
 # If you want to count transfer hours in rank calculations
 Config::Set('TRANSFER_HOURS_IN_RANKS', false);
@@ -143,8 +143,9 @@ Config::Set('MAP_ZOOM_LEVEL', 12);
 	acquire your own keys for ReCaptcha to work. Keys are site specific. 
 	Get your keys here: https://developers.google.com/recaptcha/docs/display
 	Add both keys in the provided section of local.config.php */
-	Config::Set('RECAPTCHA_PUBLIC_KEY', '6Le0B9QZAAAAAPRlmxJm24TuNKhkaCLua0a-T53w');
-	Config::Set('RECAPTCHA_PRIVATE_KEY', '6Le0B9QZAAAAAFU1wqj2nQRxuPE5Pac9dWSLytto');
+Config::Set('RECAPTCHA_PUBLIC_KEY', '<Place_Google_ReCaptcha_Site_Key_Here>');
+Config::Set('RECAPTCHA_PRIVATE_KEY', '<Place_Google_ReCaptcha_Secret_Key_Here>');
+
 /**
  * DO NOT ADD OR MAKE CHANGES TO THE CONTENTS OF THIS FILE!!
  * Instead, (if necessary) copy the section in question and paste into 
@@ -281,17 +282,17 @@ Config::Set('URL_REWRITE', false);
 /* Days of the Week
 	The compacted view, and the full text
  */
-Config::Set('DAYS_COMPACT',  array('Dom', 'Lu', 'Ma', 'Mi', 'Ju', 'Vie', 'Sab', 'Dom'));
+Config::Set('DAYS_COMPACT',  array('Su', 'M', 'T', 'W', 'Th', 'F', 'S', 'Su'));
 
 Config::Set('DAYS_LONG',
-	array('Domingo',
-		  'Lunes',
-		  'Martes',
-		  'Miercoles',
-		  'Jueves',
-		  'Viernes',
-		  'Sabado',
-		  'Domingo'
+	array('Sunday',
+		  'Monday',
+		  'Tuesday',
+		  'Wednesday',
+		  'Thursday',
+		  'Friday',
+		  'Saturday',
+		  'Sunday'
 	)
 );
 
@@ -464,8 +465,8 @@ Config::Set('VACENTRAL_DATA_FORMAT', 'json');
 # Set the type of flights we have
 Config::Set(
 	'FLIGHT_TYPES', array(
-		'P'=>'Pasajeros',
-		'C'=>'Carga',
+		'P'=>'Passenger',
+		'C'=>'Cargo',
 		'H'=>'Charter'
 	)
 );

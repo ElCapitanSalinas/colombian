@@ -57,7 +57,7 @@ function post_module_load() {
         }
 
         if (Config::Get('CLOSE_BIDS_AFTER_EXPIRE') === false) {
-            $within_timelimit = CronData::check_hoursdiff('check_expired_bids', '3');
+            $within_timelimit = CronData::check_hoursdiff('check_expired_bids', '24');
             if ($within_timelimit === false) {
                 SchedulesData::deleteExpiredBids();
                 CronData::set_lastupdate('check_expired_bids');

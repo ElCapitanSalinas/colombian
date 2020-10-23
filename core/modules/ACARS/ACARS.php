@@ -26,21 +26,12 @@ class ACARS extends CodonModule
 		$this->viewmap();
 	}
 
-	public function viewmapwxr() {
-		$this->render('wxrmap.php');
-	}
-
 	public function viewmap()
 	{
 		$this->title = 'ACARS Map';
 		$this->set('acarsdata', ACARSData::GetACARSData());
 		$this->render('acarsmap.php');
 	}
-	
-	public function livemap() {
-		$this->set('acarsdata', ACARSData::GetACARSData());
-		$this->render('livemap_page.php');
-    }
 
 	/**
 	 *  We didn't list a function for each ACARS client,

@@ -21,15 +21,15 @@ div#mb_caption{margin-right:71px}
 
 p.error { color: Red; font-weight: bold; }
 
-/* jqModal base Styling courtesy of;
+/* jqModal base Styling courtesy of; 
   Brice Burgess <bhb@iceburg.net>*/
-/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied, 
   the Window's z-index value will be set to 3000 by default (in jqModal.js). You
-  can change this value by either;
+  can change this value by either; 
     a) supplying one via CSS
     b) passing the "zIndex"parameter. E.g.  (window).jqm({zIndex:500}
 ); */
-
+ 
 .jqmWindow{ display:none;   position:absolute;  top:5%;  left:50%;   margin-left:-300px;  width:600px;   background-color:#EEE;  color:#333;  border:1px solid black;  padding:12px; text-align:left}
 
 .jqmOverlay{background-color:#000}
@@ -62,7 +62,7 @@ p.error { color: Red; font-weight: bold; }
 .ui-tabs-nav .ui-tabs-selected a span, .ui-tabs-nav a:hover span, .ui-tabs-nav a:focus span, .ui-tabs-nav a:active span{ background-position:0 -50px}
 .ui-tabs-nav a span, .ui-tabs-nav .ui-tabs-disabled a:hover span, .ui-tabs-nav .ui-tabs-disabled a:focus span, .ui-tabs-nav .ui-tabs-disabled a:active span{ background-position:0 0}
 .ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited, .ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited{/* @ Opera,use pseudo classes otherwise it confuses cursor... */ cursor:text}
-.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active, 
 .ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active{/* @ Opera,we need to be explicit again here now... */ cursor:pointer}
 .ui-tabs-disabled{ opacity:.4;  filter:alpha(opacity=40)}
 .ui-tabs-panel{ border-top:1px solid #97a5b0;  padding:1em 8px;  background:#fff; /* declare background color for container to avoid distorted fonts in IE while fading */}
@@ -72,10 +72,10 @@ p.error { color: Red; font-weight: bold; }
 * html .ui-tabs-nav{/* auto clear,@ IE 6 &IE 7 Quirks Mode */ display:inline-block}
 *:first-child+html .ui-tabs-nav{/* @ IE 7 Standards Mode - do not group selectors,otherwise IE 6 will ignore complete rule (because of the unknown+combinator)... */ display:inline-block}
 
-table.balancesheet{border:2px solid #2f70a9; padding:0px}
+table.balancesheet{border:2px solid #333; padding:0px}
 
 table.balancesheet tr{border-bottom:1px solid #CCC}
 
 table.balancesheet td{padding:6px}
 
-.balancesheet_header td{border:none; padding:4px; padding-left:30px; font-weight:bold; text-transform:uppercase; background-color:#2f70a9; color:#FFF; text-align:right}
+.balancesheet_header td{border:none; padding:4px; padding-left:30px; font-weight:bold; text-transform:uppercase; background-color:#333; color:#FFF; text-align:right}

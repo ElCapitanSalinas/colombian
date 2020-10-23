@@ -1,4 +1,4 @@
-F<?php
+<?php
 /**
  * 
  * STOP!!!!!!!!
@@ -21,10 +21,6 @@ F<?php
 <title><?php echo $page_title; ?></title>
 
 <link rel="stylesheet" media="all" type="text/css" href="<?php echo SITE_URL?>/lib/skins/crystal/styles.css" />
-<link rel="stylesheet" href="<?php echo SITE_URL?>/lib/js/leaflet/leaflet.css" />
-<script src="<?php echo SITE_URL?>/lib/js/leaflet/leaflet.js"></script>
-<script src="<?php echo SITE_URL?>/lib/js/leaflet/leaflet-providers.js"></script>
-<script src="<?php echo SITE_URL?>/lib/js/leaflet/Leaflet.Geodesic.js"></script>
 
 <?php 
 /* This is required, so phpVMS can output the necessary libraries it needs */

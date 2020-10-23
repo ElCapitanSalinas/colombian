@@ -37,19 +37,18 @@
 */
 ?>
 var acars_map_defaults = {
-autozoom: true,
-        styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#131313"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#094981"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0C336E"},{"visibility":"on"}]}], // <-- ADD THIS
+autozoom: false,
+         styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#131313"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#094981"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0C336E"},{"visibility":"on"}]}], // <-- ADD THIS
 zoom: 4,
+         center: new google.maps.LatLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
+         mapTypeId: google.maps.MapTypeId.TERRAIN,
+         refreshTime: 10000
 
-    center: new google.maps.LatLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
-    mapTypeId: google.maps.MapTypeId.TERRAIN,
-    refreshTime: 10000
-};
+		 };
+
+
 </script>
-<div class="mapcenter" align="center">
-	<div id="acarsmap" style="width:<?php echo  Config::Get('MAP_WIDTH');?>; height: <?php echo Config::Get('MAP_HEIGHT')?>"></div>
-</div>
-	
+<div id="acarsmap" style="width: 100%; height: 600px; position: relative; overflow: hidden;"></div>
 <?php
 /* See below for details and columns you can use in this table */
 ?>

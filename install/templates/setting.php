@@ -1,1 +1,0 @@
-Config::Set('<?php echo $name;?>', '<?php echo $value;?>');

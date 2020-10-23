@@ -24,15 +24,15 @@ Config::Set('DEBUG_MODE', false);
 Config::Set('DEBUG_LEVEL', 1); // 1 logs query errors, 2 logs all queries
 Config::Set('ERROR_LEVEL', E_ALL ^ E_NOTICE);
 
-define('DBASE_USER', 'root');
-define('DBASE_PASS', '');
-define('DBASE_NAME', 'phpvms');
+define('DBASE_USER', 'u784211923_salinas');
+define('DBASE_PASS', 's*Ntr?91Y$');
+define('DBASE_NAME', 'u784211923_phpvms');
 define('DBASE_SERVER', 'localhost');
 define('DBASE_TYPE', 'mysqli');
 
 define('TABLE_PREFIX', 'phpvms_');
 
-define('SITE_URL', 'http://localhost/colombian');
+define('SITE_URL', 'https://colombianairways.com');
 
 # Page encoding options
 Config::Set('PAGE_ENCODING', 'ISO-8859-1');
@@ -57,7 +57,7 @@ Config::Set('CHECK_BETA_VERSION', false);
 # See more details about these in the docs
 Config::Set('PAGE_EXT', '.htm');	# .htm is fine. You can still run PHP
 Config::Set('PILOTID_OFFSET', 0);	# What # to start pilot ID's from
-Config::Set('PILOTID_LENGTH', 4);	# Length of the Pilot ID
+Config::Set('PILOTID_LENGTH', 3);	# Length of the Pilot ID
 Config::Set('UNITS', 'nm');			# Your units: nm, mi or km
 Config::Set('LOAD_FACTOR', '82');	# %age load factor 
 Config::Set('CARGO_UNITS', 'lbs');
@@ -76,11 +76,11 @@ Config::Set('RANKS_AUTOCALCULATE', true);
 Config::Set('PIREP_CUSTOM_FIELD_EDIT', '48');
 
 # If someone places a bid, whether to disable that or not
-Config::Set('DISABLE_SCHED_ON_BID', true);
+Config::Set('DISABLE_SCHED_ON_BID', false);
 Config::Set('DISABLE_BIDS_ON_BID', false);
 
 # If you want to count transfer hours in rank calculations
-Config::Set('TRANSFER_HOURS_IN_RANKS', false);
+Config::Set('TRANSFER_HOURS_IN_RANKS', true);
 
 # The StatsData::UserOnline() function - how many minutes to check
 Config::Set('USERS_ONLINE_TIME', 20);
@@ -105,9 +105,9 @@ Config::Set('MAP_ZOOM_LEVEL', 12);
 	acquire your own keys for ReCaptcha to work. Keys are site specific. 
 	Get your keys here: https://developers.google.com/recaptcha/docs/display
 	Add each key in the designated section */
-Config::Set('RECAPTCHA_PUBLIC_KEY', 'PLACE_GOOGLE_RECAPTCHA_SITE_KEY_HERE');
-Config::Set('RECAPTCHA_PRIVATE_KEY', 'PLACE_GOOGLE_RECAPTCHA_SECRET_KEY_HERE');
-
+Config::Set('RECAPTCHA_PUBLIC_KEY', '6Lc8c9UZAAAAAP-R9hH52rrBq234YhlhPHcG5gJb');
+Config::Set('RECAPTCHA_PRIVATE_KEY', '6Lc8c9UZAAAAANJPOyF6KzSvwR6AESykg4pg9wNs');
+	
 # ACARS options
 #  Minutes, flights to show on the ACARS
 #  Default is 720 minutes (12 hours)
@@ -166,13 +166,14 @@ Config::Set('SIGNATURE_SHOW_RANK_IMAGE', true);
 Config::Set('SIGNATURE_SHOW_COPYRIGHT', true);
 
 # Avatar information
+
 Config::Set('AVATAR_FILE_SIZE', 50000); 
 Config::Set('AVATAR_MAX_WIDTH', 80);
 Config::Set('AVATAR_MAX_HEIGHT', 80);
 
 # Email Settings
-Config::Set('EMAIL_FROM_NAME', '');
-Config::Set('EMAIL_FROM_ADDRESS', '');
+Config::Set('EMAIL_FROM_NAME', 'Colombian Airlines (No-Reply)');
+Config::Set('EMAIL_FROM_ADDRESS', 'no-reply@colombianairways.com');
 
 Config::Set('EMAIL_USE_SMTP', false);
 # Add multiple SMTP servers by separating them with ;
