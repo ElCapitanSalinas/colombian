@@ -29,6 +29,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
          <a class="dropdown-item" href="https://colombianairways.com/index.php/pages/objetivos">Objetivos</a>
+         <a class="dropdown-item" href="https://colombianairways.com/docs/MGO.pdf">Rs & Rs</a>
           <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/Pilots">Pilotos</a>
           <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/vStaff">Staff</a>
           <div class="dropdown-divider"></div>
