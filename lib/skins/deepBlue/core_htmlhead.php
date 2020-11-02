@@ -23,6 +23,13 @@
  * THANKS!
  */
 ?>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Bienvenido a Colombian Airways, que esperas para iniciar esta nueva etapa virtual?, Las puertas están abiertas para aprender y para volar!.">
+    <meta name="keywords" content="Colombian Airways, CBV, Colombian, IVAO, Colombia Aerolineas, Virtual Airlines, aerolineas virtuales colombia, juan f salinas, simulacion, aviacion, aerocivil, ivaocol">
+
+	  <meta name="author" content="Juan F. Salinas"/>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = yes, width = device-width">
 <script type="text/javascript">
 var baseurl = "<?php echo SITE_URL;?>";
 var geourl = "<?php echo GEONAME_URL; ?>";
