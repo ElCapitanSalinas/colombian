@@ -28,17 +28,17 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://media.discordapp.net/attachments/501578269355671553/762578345518825482/header1.jpg" class="d-block w-100" alt="..." height="400">
+      <img src="https://colombianairways.com/img/banner4.png" class="d-block w-100" alt="..." height="400">
     </div>
     <div class="carousel-item">
-      <img src="https://media.discordapp.net/attachments/501578269355671553/762578349318209536/header2.jpg" class="d-block w-100" alt="..." height="400">
+      <img src="https://colombianairways.com/img/banner1.png" class="d-block w-100" alt="..." height="400">
     </div>
     <div class="carousel-item">
       <img
-       src="https://media.discordapp.net/attachments/501578269355671553/762578350530494484/header3.jpg" class="d-block w-100" alt="..." height="400">
+       src="https://colombianairways.com/img/banner2.png" class="d-block w-100" alt="..." height="400">
     </div>
     <div class="carousel-item">
-      <img src="https://media.discordapp.net/attachments/501578269355671553/762578352413474877/header4.jpg" class="d-block w-100" alt="..." height="400">
+      <img src="https://colombianairways.com/img/banner3.png" class="d-block w-100" alt="..." height="400">
     </div>
   </div>
 
