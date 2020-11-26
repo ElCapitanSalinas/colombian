@@ -1,0 +1,147 @@
+/* Created by Artisteer v4.1.0.59861 */
+
+.deepBlue-header, #deepBlue-header-bg, .deepBlue-layout-cell, .deepBlue-layout-wrapper, .deepBlue-footer, .deepBlue-nav, #deepBlue-hmenu-bg, .deepBlue-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.deepBlue-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.deepBlue-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#deepBlue-header-bg 
+{
+   display: none;
+}
+
+.deepBlue-hmenu>li, .deepBlue-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.deepBlue-hmenu, ul.deepBlue-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#deepBlue-hmenu-bg 
+{
+   display: none;
+}
+
+ul.deepBlue-hmenu>li:first-child {
+   padding-right:1px;
+}
+ul.deepBlue-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='deepBlue-hmenu-separator');
+}
+ul.deepBlue-hmenu>li>span.deepBlue-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -1px;
+   width: 1px;
+   height: 68px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.deepBlue-hmenu>li:first-child>span.deepBlue-hmenu-separator
+{
+   display:none;
+}
+
+ul.deepBlue-hmenu ul{
+   background-color: #EFF2F5 !important;
+}
+
+.deepBlue-content-layout, .deepBlue-content-layout-row, .deepBlue-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.deepBlue-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.deepBlue-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.deepBlue-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.deepBlue-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.deepBlue-postheadericons span{
+   zoom: 1;
+}
+.deepBlue-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.deepBlue-sidebar2 
+{
+   width: auto;
+   float:none;
+}
+
+.deepBlue-sidebar1
+{
+   background: none !important;
+   border: none !important;
+   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='deepBlue-sidebar1-bg' + (className.indexOf('deepBlue-sidebar1-fix') == -1 ? '' : ' deepBlue-sidebar1-bg-fix' ));
+}
+
+.deepBlue-sidebar1-bg 
+{
+   border:1px dotted #A3B4C8;
+   border-top:none;
+   border-bottom:none;
+   position:absolute;
+   z-index:-2;
+   direction: ltr;
+   right:  300px;
+   bottom:0;
+   top:0;
+   width: 300px;
+   overflow:hidden;
+   display:block;
+}
+
