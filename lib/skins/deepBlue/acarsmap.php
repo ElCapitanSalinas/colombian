@@ -1,4 +1,3 @@
-<br />
 <?php 
 /**
  * These are some options for the ACARS map, you can change here
@@ -6,67 +5,11 @@
  * By default, the zoom level and center are ignored, and the map 
  * will try to fit the all the flights in. If you want to manually set
  * the zoom level and center, set "autozoom" to false.
- * 
- * You can use these MapTypeId's:
- * http://code.google.com/apis/maps/documentation/v3/reference.html#MapTypeId
- * 
- * Change the "TERRAIN" to the "Constant" listed there - they are case-sensitive
- * 
- * Also, how to style the acars pilot list table. You can use these style selectors:
- * 
- * table.acarsmap { }
- * table.acarsmap thead { }
- * table.acarsmap tbody { }
- * table.acarsmap tbody tr.even { }
- * table.acarsmap tbody tr.odd { } 
  */
 ?>
-<script type="text/javascript">
-<?php 
-/* These are the settings for the Google map. You can see the
-	Google API reference if you want to add more options.
-	
-	There's two options I've added:
-	
-	autozoom: This will automatically center in on/zoom 
-	  so all your current flights are visible. If false,
-	  then the zoom and center you specify will be used instead
-	  
-	refreshTime: Time, in seconds * 1000 to refresh the map.
-	  The default is 10000 (10 seconds)
-*/
-?>
-var acars_map_defaults = {
-autozoom: false,
-         styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#131313"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#094981"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0C336E"},{"visibility":"on"}]}], // <-- ADD THIS
-zoom: 4,
-         center: new google.maps.LatLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
-         mapTypeId: google.maps.MapTypeId.TERRAIN,
-         refreshTime: 10000
 
-		 };
+<div id="acarsmap" style="width: 100%; height: 500px; position: relative; overflow: hidden;"></div>
 
-
-</script>
-<div id="acarsmap" style="width: 100%; height: 600px; position: relative; overflow: hidden;"></div>
-<?php
-/* See below for details and columns you can use in this table */
-?>
-<br />
-<table width="100%" border="0" cellspacing="0" cellpadding="0" class="deepBlue_table">
-<thead>
-	<tr>
-		<th>Piloto</th>
-		<th>Vuelo</th>
-		<th>Salida</th>
-		<th>Llegada</th>
-		<th>Estado</th>
-		<th>Alt</th>
-		<th>Distancia/Tiempo</th>
-	</tr>
-</thead>
-<tbody id="pilotlist"></tbody>
-</table>
 <script src="<?php echo SITE_URL?>/lib/js/base_map.js"></script>
 <script src="<?php echo SITE_URL?>/lib/js/acarsmap.js"></script>
 <?php
@@ -103,16 +46,17 @@ zoom: 4,
 ?>
 <script type="text/html" id="acars_map_row">
 <tr class="<%=flight.trclass%>">
-<td width="80"><a href="<?php echo url('/profile/view');?>/<%=flight.pilotid%>"><%=flight.pilotid%></a></td>
-<td width="80"><%=flight.flightnum%></td>
-<td width="20"><%=flight.depicao%></td>
-<td width="20"><%=flight.arricao%></td>
-<td width="140"><%=flight.phasedetail%></td>
-<td width="40"><%=flight.alt%></td>
-<td width="90"><%=flight.distremaining%> <?php echo Config::Get('UNITS');?> / <%=flight.timeremaining%></td>
-
+<td><a href="<?php echo url('/profile/view');?>/<%=flight.pilotid%>"><%=flight.pilotid%> - <%=flight.pilotname%></a></td>
+<td><%=flight.flightnum%></td>
+<td><%=flight.depicao%></td>
+<td><%=flight.arricao%></td>
+<td><%=flight.phasedetail%></td>
+<td><%=flight.alt%></td>
+<td><%=flight.gs%></td>
+<td><%=flight.distremaining%> <?php echo Config::Get('UNITS');?> / <%=flight.timeremaining%></td>
 </tr>
 </script>
+
 <?php
 /*	This is the template for the little map bubble which pops up when you click on a flight
 	Same principle as above, keep the <%=...%> tags intact. The same variables are available
@@ -157,4 +101,30 @@ zoom: 4,
 <strong>Frequency: </strong><%=nav.freq%>
 <% } %>
 </span>
+</script>
+<script type="text/javascript">
+<?php 
+/* These are the settings for the Google map. You can see the
+	Google API reference if you want to add more options.
+	
+	There's two options I've added:
+	
+	autozoom: This will automatically center in on/zoom 
+	  so all your current flights are visible. If false,
+	  then the zoom and center you specify will be used instead
+	  
+	refreshTime: Time, in seconds * 1000 to refresh the map.
+	  The default is 10000 (10 seconds)
+*/
+?>
+const opts = {
+	render_elem: 'acarsmap',
+	provider: '<?php echo Config::Get("MAP_TYPE"); ?>',
+	autozoom: true,
+	zoom: <?php echo Config::Get('MAP_ZOOM_LEVEL'); ?>,
+    center: L.latLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
+    refreshTime: 10000
+};
+
+renderAcarsMap(opts);
 </script>
