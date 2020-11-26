@@ -1,17 +1,71 @@
-<?php 
+<?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
+<?php
 /**
  * These are some options for the ACARS map, you can change here
  * 
  * By default, the zoom level and center are ignored, and the map 
  * will try to fit the all the flights in. If you want to manually set
  * the zoom level and center, set "autozoom" to false.
+ * 
+ * You can use these MapTypeId's:
+ * http://code.google.com/apis/maps/documentation/v3/reference.html#MapTypeId
+ * 
+ * Change the "TERRAIN" to the "Constant" listed there - they are case-sensitive
+ * 
+ * Also, how to style the acars pilot list table. You can use these style selectors:
+ * 
+ * table.acarsmap { }
+ * table.acarsmap thead { }
+ * table.acarsmap tbody { }
+ * table.acarsmap tbody tr.even { }
+ * table.acarsmap tbody tr.odd { } 
  */
 ?>
-
-<div id="acarsmap" style="width: 100%; height: 500px; position: relative; overflow: hidden;"></div>
-
-<script src="<?php echo SITE_URL?>/lib/js/base_map.js"></script>
-<script src="<?php echo SITE_URL?>/lib/js/acarsmap.js"></script>
+<script type="text/javascript">
+<?php 
+/* These are the settings for the Google map. You can see the
+	Google API reference if you want to add more options.
+	
+	There's two options I've added:
+	
+	autozoom: This will automatically center in on/zoom 
+	  so all your current flights are visible. If false,
+	  then the zoom and center you specify will be used instead
+	  
+	refreshTime: Time, in seconds * 1000 to refresh the map.
+	  The default is 10000 (10 seconds)
+*/
+?>
+var acars_map_defaults = {
+	autozoom: true,
+	zoom: 4,
+    center: new google.maps.LatLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
+    refreshTime: 10000
+};
+</script>
+<div class="mapcenter" align="center">
+	<div id="acarsmap" style="width:<?php echo  Config::Get('MAP_WIDTH');?>; height: <?php echo Config::Get('MAP_HEIGHT')?>"></div>
+</div>
+<?php
+/* See below for details and columns you can use in this table */
+?>
+<table border = "0" width="100%" class="acarsmap">
+<thead>
+	<tr>
+		<td><b>Pilot</b></td>
+		<td><b>Flight Number</b></td>
+		<td><b>Departure</b></td>
+		<td><b>Arrival</b></td>
+		<td><b>Status</b></td>
+		<td><b>Altitude</b></td>
+		<td><b>Speed</b></td>
+		<td><b>Distance/Time Remain</b></td>
+	</tr>
+</thead>
+<tbody id="pilotlist"></tbody>
+</table>
+<script type="text/javascript" src="<?php echo fileurl('/lib/js/acarsmap.js');?>"></script>
 <?php
 /* This is the template which is used in the table above, for each row. 
 	Be careful modifying it. You can simply add/remove columns, combine 
@@ -101,30 +155,4 @@
 <strong>Frequency: </strong><%=nav.freq%>
 <% } %>
 </span>
-</script>
-<script type="text/javascript">
-<?php 
-/* These are the settings for the Google map. You can see the
-	Google API reference if you want to add more options.
-	
-	There's two options I've added:
-	
-	autozoom: This will automatically center in on/zoom 
-	  so all your current flights are visible. If false,
-	  then the zoom and center you specify will be used instead
-	  
-	refreshTime: Time, in seconds * 1000 to refresh the map.
-	  The default is 10000 (10 seconds)
-*/
-?>
-const opts = {
-	render_elem: 'acarsmap',
-	provider: '<?php echo Config::Get("MAP_TYPE"); ?>',
-	autozoom: true,
-	zoom: <?php echo Config::Get('MAP_ZOOM_LEVEL'); ?>,
-    center: L.latLng("<?php echo Config::Get('MAP_CENTER_LAT'); ?>", "<?php echo Config::Get('MAP_CENTER_LNG'); ?>"),
-    refreshTime: 10000
-};
-
-renderAcarsMap(opts);
 </script>
