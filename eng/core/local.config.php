@@ -32,7 +32,7 @@ define('DBASE_TYPE', 'mysqli');
 
 define('TABLE_PREFIX', 'phpvms_');
 
-define('SITE_URL', 'https://colombianairways.com/eng/');
+define('SITE_URL', 'https://colombianairways.com/eng');
 
 # Page encoding options
 Config::Set('PAGE_ENCODING', 'ISO-8859-1');
