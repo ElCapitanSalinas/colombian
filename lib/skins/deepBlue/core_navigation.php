@@ -104,7 +104,7 @@
                <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/profile/editprofile">Editar perfil</a>
                <div class="dropdown-divider"></div>
                <a class="dropdown-item" href="https://chat.whatsapp.com/JjwM7KJ7ITG9AwpqMzmtPr" style="text-align: center; font-size: 12px;"><b><i class="fa fa-whatsapp"></i> Whatsapp</b></a>
-               <a class="dropdown-item" href="https://discord.gg/ZakwVku" style="text-align: center; font-size: 12px;"><b><i class="fa fa-globe"></i> Discord</b></a>            
+               <a class="dropdown-item" href="https://discord.gg/rZDB8UGcvd" style="text-align: center; font-size: 12px;"><b><i class="fa fa-globe"></i> Discord</b></a>            
             </div>
             </li>
             <?php
