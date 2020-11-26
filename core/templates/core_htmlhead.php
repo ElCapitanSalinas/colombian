@@ -35,7 +35,7 @@ var baseurl = "<?php echo SITE_URL;?>";
 <!--
  * Add Google Maps API key to next line. https://developers.google.com/maps/documentation/javascript/get-api-key 
  -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGo1W8rA2v4SCtxx3Ei5_GkVJMUkHoUQk"></script>
 <script type="text/javascript" src="<?php echo fileurl('lib/js/jquery.form.js');?>"></script>
 <script type="text/javascript" src="<?php echo fileurl('lib/js/phpvms.js');?>"></script>
 
