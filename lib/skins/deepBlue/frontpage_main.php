@@ -13,7 +13,7 @@
             // Show these items only if they are logged in
          ?>
           <div class="alert alert-success" role="alert">
-          Welcome Again! <b><?php echo Auth::$userinfo->firstname?></b>, Enjoy of another level of simulation!.
+          Bienvenido de nuevo! <b><?php echo Auth::$userinfo->firstname?></b>, ¡Difruta de otro nivel de simulación!.
           </div>
             <?php
          }
@@ -23,7 +23,7 @@
 <div class="row">
   <div class="col-lg-9">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Relevant News</font></b></h5>
+        <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Noticias Relevantes</font></b></h5>
         <div class="card-body">
               <p class="card-text"><?php
 
@@ -37,21 +37,21 @@
   </div>
   <div class="col-sm-3">
     <div class="card w-100">
-    <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Statistics</font></b></h5>
+    <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Estadisticas</font></b></h5>
       <div class="card-body">
-        <p class="card-text">Active pilots: <b><?php echo StatsData::PilotCount(); ?></b></p>
+        <p class="card-text">Pilotos activos: <b><?php echo StatsData::PilotCount(); ?></b></p>
         <hr>
-        <p class="card-text">Flown Hours: <b><?php echo StatsData::TotalHours(); ?></b></p>
+        <p class="card-text">Horas voladas: <b><?php echo StatsData::TotalHours(); ?></b></p>
         <hr>
-        <p class="card-text">Flights made: <b><?php echo StatsData::TotalFlights(); ?></b></p>
+        <p class="card-text">Vuelos Hechos: <b><?php echo StatsData::TotalFlights(); ?></b></p>
         <hr>
-        <p class="card-text">Miles Flown: <b><?php echo StatsData::TotalMilesFlown(); ?></b></p>
+        <p class="card-text">Millas voladas: <b><?php echo StatsData::TotalMilesFlown(); ?></b></p>
         <hr>
-        <p class="card-text">Flights made today: <b><?php echo StatsData::TotalFlightsToday(); ?></b></p>
+        <p class="card-text">Vuelos hechos hoy: <b><?php echo StatsData::TotalFlightsToday(); ?></b></p>
         <hr>
-        <p class="card-text">Pilots Online: <b><?php echo count(StatsData::UsersOnline()); ?></b></p>
+        <p class="card-text">Pilotos en linea: <b><?php echo count(StatsData::UsersOnline()); ?></b></p>
         <hr>
-        <p class="card-text">Total routes: <b><?php echo StatsData::TotalSchedules(); ?></b></p>
+        <p class="card-text">Rutas totales: <b><?php echo StatsData::TotalSchedules(); ?></b></p>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
 <div class="row">
   <div class="col-sm-3">
     <div class="card w-100">
-    <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">New pilots</font></b></h5>
+    <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">Pilotos Nuevos</font></b></h5>
       <div class="card-body">
       <?php MainController::Run('Pilots', 'RecentFrontPage', 5); ?>
       </div>
@@ -69,7 +69,7 @@
   </div>
   <div class="col-lg-9">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">Live Map</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">Mapa en vivo</font></b></h5>
         <div class="card-body">
         <?php MainController::Run('ACARS', 'index'); ?>
 			</div>
@@ -92,25 +92,25 @@
                     <thead>
                         <tr>
                             <th>
-                                <div align="center">Flight #</div>
+                                <div align="center">Vuelo #</div>
                             </th>
                             <th>
-                                <div align="center">Pilot</div>
+                                <div align="center">Piloto</div>
                             </th>
                             <th>
-                                <div align="center">Slot added on</div>
+                                <div align="center">SLOT añadido el</div>
                             </th>
                             <th>
-                                <div align="center">Slot Expires on</div>
+                                <div align="center">El SLOT expira en</div>
                             </th>
                             <th>
-                                <div align="center">Departure</div>
+                                <div align="center">Salida</div>
                             </th>
                             <th>
-                                <div align="center">Arrival</div>
+                                <div align="center">Llegada</div>
                             </th>
                             <th>
-                                <div align="center">Registration</div>
+                                <div align="center">Aeronaves</div>
                             </th>
                         </tr>
                     </thead>
