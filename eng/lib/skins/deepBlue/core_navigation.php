@@ -63,7 +63,7 @@
      ?>
         <li class="nav-item">
         <a class="nav-link" href="<?php echo SITE_URL ?>/index.php/Downloads"  aria-haspopup="true" aria-expanded="false">
-         Descargas</a>
+         Downloads</a>
         </li>
         <?php
      }
