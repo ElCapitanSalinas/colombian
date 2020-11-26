@@ -79,7 +79,8 @@
 				<h4>Live Map</h4>
 			</div>
 			<div class="card-body p-0">
-				<?php require 'acarsmap.php'; ?>
+				
+        <?php MainController::Run('ACARS', 'index'); ?>
 			</div>
 		</div>
 
