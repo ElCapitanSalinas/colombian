@@ -17,13 +17,13 @@
         <table class="table table-bordered">
 			<thead>
                         <tr>
-                            <th>ID del piloto</th>
-                            <th>Nombre</th>
-                            <th>Rango</th>
-                            <th>Vuelos</th>
-                            <th>Horas</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Rank</th>
+                            <th>Flights</th>
+                            <th>Hours</th>
                             <th>Hub</th>
-                            <th>Estado</th>
+                            <th>State</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,11 +45,11 @@
                             <td>
                                 <?php
                                 if($pilot->retired == 0) {
-                                    echo '<span class="label label-success">Activo</span>';
+                                    echo '<span class="label label-success">Active</span>';
                                 } elseif($pilot->retired == 1) {
-                                    echo '<span class="label label-danger">Inactivo</span>';
+                                    echo '<span class="label label-danger">Inactive</span>';
                                 } else {
-                                    echo '<span class="label label-primary">En vacaciones</span>';
+                                    echo '<span class="label label-primary">On vacations</span>';
                                 }
                                 ?>
                             </td>

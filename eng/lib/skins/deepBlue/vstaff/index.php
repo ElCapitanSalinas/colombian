@@ -30,13 +30,13 @@ MODULE LINKS TO ADD TO YOUR WEBSITE. THE ADMIN LINK IS ALREADY ADDED.
   </div>
   <div class="col-lg-10">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-shield" fa-lg style="color:#FFFFFF"></i> Nuestro Staff</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-shield" fa-lg style="color:#FFFFFF"></i> Our Staff</font></b></h5>
         <div class="card-body">
         <table class="table table-bordered">
         <?php
                 if(!$stafflevels)
                 {
-                echo 'No hay staff!';
+                echo 'There is not staff!';
                 $stafflevels = array();
                 }
                 foreach($stafflevels as $level)

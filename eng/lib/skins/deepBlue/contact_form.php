@@ -6,13 +6,13 @@
   </div>
   <div class="col-lg-10">
         <div class="card w-200">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-envelope" fa-lg style="color:#FFFFFF"></i> Contáctanos</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-envelope" fa-lg style="color:#FFFFFF"></i> Contact Us</font></b></h5>
         <div class="card-body">
 		<?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
 		<form method="post" action="<?php echo url('/contact'); ?>">
         <table class="table table-bordered">
 		<tr>
-      <td><strong>Nombre:</strong></td>
+      <td><strong>Name:</strong></td>
       <td>
 		<?php
 		if(Auth::LoggedIn())
@@ -32,7 +32,7 @@
       </td>
     </tr>
     <tr>
-		<td width="1%" nowrap><strong>Correo:</strong></td>
+		<td width="1%" nowrap><strong>Mail:</strong></td>
 		<td>
 		<?php
 		if(Auth::LoggedIn())
@@ -52,12 +52,12 @@
 	</tr>
 
 	<tr>
-		<td><strong>Tema: </strong></td>
+		<td><strong>Subject: </strong></td>
 		<td><input class="form-control" type="text" name="subject" value="<?php echo $_POST['subject'];?>" /></td>
 
 	</tr>
     <tr>
-      <td><strong>Mensaje:</strong></td>
+      <td><strong>Message:</strong></td>
       <td>
 		<textarea name="message" class="form-control" cols='45' rows='5'><?php echo $_POST['message'];?></textarea>
       </td>
@@ -78,7 +78,7 @@
 			<input type="hidden" name="loggedin" class="form-control" value="<?php echo (Auth::LoggedIn())?'true':'false'?>" />
 		</td>
 		<td>
-			<button type="submit" class="btn btn-success" name="submit" value='Enviar Mensaje'>Enviar</button>
+			<button type="submit" class="btn btn-success" name="submit" value='Enviar Mensaje'>Send</button>
 		</td>
     </tr>
 	</tbody>
