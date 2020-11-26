@@ -13,7 +13,7 @@
             // Show these items only if they are logged in
          ?>
           <div class="alert alert-success" role="alert">
-          Bienvenido de nuevo! <b><?php echo Auth::$userinfo->firstname?></b>, ¡Disfruta de otro nivel en simulación!.
+          Welcome Again! <b><?php echo Auth::$userinfo->firstname?></b>, Enjoy of another level of simulation!.
           </div>
             <?php
          }
@@ -23,7 +23,7 @@
 <div class="row">
   <div class="col-lg-9">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Noticias Relevantes</font></b></h5>
+        <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Relevant News</font></b></h5>
         <div class="card-body">
               <p class="card-text"><?php
 
@@ -37,21 +37,21 @@
   </div>
   <div class="col-sm-3">
     <div class="card w-100">
-    <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Estadísticas</font></b></h5>
+    <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Statistics</font></b></h5>
       <div class="card-body">
-        <p class="card-text">Pilotos activos: <b><?php echo StatsData::PilotCount(); ?></b></p>
+        <p class="card-text">Active pilots: <b><?php echo StatsData::PilotCount(); ?></b></p>
         <hr>
-        <p class="card-text">Horas voladas: <b><?php echo StatsData::TotalHours(); ?></b></p>
+        <p class="card-text">Flown Hours: <b><?php echo StatsData::TotalHours(); ?></b></p>
         <hr>
-        <p class="card-text">Vuelos hechos: <b><?php echo StatsData::TotalFlights(); ?></b></p>
+        <p class="card-text">Flights made: <b><?php echo StatsData::TotalFlights(); ?></b></p>
         <hr>
-        <p class="card-text">Millas voladas: <b><?php echo StatsData::TotalMilesFlown(); ?></b></p>
+        <p class="card-text">Miles Flown: <b><?php echo StatsData::TotalMilesFlown(); ?></b></p>
         <hr>
-        <p class="card-text">Vuelos hechos hoy: <b><?php echo StatsData::TotalFlightsToday(); ?></b></p>
+        <p class="card-text">Flights made today: <b><?php echo StatsData::TotalFlightsToday(); ?></b></p>
         <hr>
-        <p class="card-text">Pilotos en línea: <b><?php echo count(StatsData::UsersOnline()); ?></b></p>
+        <p class="card-text">Pilots Online: <b><?php echo count(StatsData::UsersOnline()); ?></b></p>
         <hr>
-        <p class="card-text">Rutas totales: <b><?php echo StatsData::TotalSchedules(); ?></b></p>
+        <p class="card-text">Total routes: <b><?php echo StatsData::TotalSchedules(); ?></b></p>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
 <div class="row">
   <div class="col-sm-3">
     <div class="card w-100">
-    <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">Pilotos nuevos</font></b></h5>
+    <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">New pilots</font></b></h5>
       <div class="card-body">
       <?php MainController::Run('Pilots', 'RecentFrontPage', 5); ?>
       </div>
@@ -69,17 +69,8 @@
   </div>
   <div class="col-lg-9">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">Mapa en vivo</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">Live Map</font></b></h5>
         <div class="card-body">
-        <div class="deepBlue-blockcontent"><p>
-        <div class="row">
-	<div class="col-lg-8 col-md-12 col-12 col-sm-12">
-		<div class="card">
-			<div class="card-header">
-				<h4>Live Map</h4>
-			</div>
-			<div class="card-body p-0">
-				
         <?php MainController::Run('ACARS', 'index'); ?>
 			</div>
 		</div>
@@ -89,21 +80,11 @@
 			$countBids = (is_array($lastbids) ? count($lastbids) : 0);
 		?>
 		<div class="card">
-			<div class="card-header">
-				<h4>Upcoming Departure</h4>
-				<div class="card-header-action">
-					<?php if(!$countBids) { ?>
-					<a href="javascript::" class="btn btn-info">No Departures</a>
-					<?php } else { ?>
-					<a href="javascript::" class="btn btn-success">Upcoming</a>
-					<?php } ?>
-				</div>
-			</div>
 			<div class="card-body">
 				<?php if(!$countBids) { ?>
 				<div class="alert alert-danger">
 					<div class="alert-title">Oops</div>
-					Looks like there are no upcoming departures at the moment, do you feel like flying? Click <a href="<?php echo SITE_URL?>/index.php/fltbook">here</a> to bid a flight!
+					Parece que no hay salidas al momento
 				</div>
 				<?php } else { ?>
 			<div class="table-responsive">
