@@ -3,14 +3,14 @@
 <?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
 <br /><div style="float: right;">
 <form action="<?php echo url('/finances/viewreport'); ?>" method="get">
-<strong>Seleccionar reporte: </strong>
+<strong>Select Report: </strong>
 <?php
 $years = StatsData::GetYearsSinceStart();
 $months = StatsData::GetMonthsSinceStart();
 $months = array_reverse($months, true);
 ?>
 <select name="type">
-	<option value="" <?php echo ($_GET['type']=='')?'selected="selected"':''?>>Ver opciones</option>
+	<option value="" <?php echo ($_GET['type']=='')?'selected="selected"':''?>>View options</option>
 <?php
 /*
  * Get the years since the VA started
@@ -46,7 +46,7 @@ foreach($months as $monthname=>$timestamp)
 }
 ?>
 </select>
-<input class="btn btn-success" type="submit" name="submit" value="Ver reporte" />
+<input class="btn btn-success" type="submit" name="submit" value="View Report" />
 </form>
 </div><br />
 </div>

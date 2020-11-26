@@ -18,21 +18,21 @@ Template::Show('finance_header.php');
         <div class="card-body">
         <table class="table table-bordered" width="600px">
 		<tr class="balancesheet_header">
-		<td align="" colspan="2">Oferta y demanda</td>
+		<td align="" colspan="2">Offer and expense</td>
 	</tr>
 	<tr>
-		<td align="right">Ingresos brutos por vuelos: <br />
+		<td align="right">Revenues per flight: <br />
 			Número de vuelos: <?php echo $month_data->total; ?>
 		</td>
 		<td align="right" valign="top"><?php echo FinanceData::FormatMoney($month_data->gross);?></td>
 	</tr>
 	
 	<tr>
-		<td align="right">Pagos a pilotos: </td>
+		<td align="right">Pilot payments: </td>
 		<td align="right"> <?php echo str_replace('$', Config::Get('MONEY_UNIT'), FinanceData::FormatMoney(-1*$month_data->pilotpay));?></td>
 	</tr>
 	<tr>
-		<td align="right">Gastos en combustible: </td>
+		<td align="right">Fuel Expenses: </td>
 		<td align="right"> <?php echo str_replace('$', Config::Get('MONEY_UNIT'), FinanceData::FormatMoney(-1*$month_data->fuelprice));?></td>
 	</tr>
 	
@@ -48,7 +48,7 @@ Template::Show('finance_header.php');
 	</tr>
 	
 	<tr class="balancesheet_header">
-		<td align="" colspan="2">Gastos (Mensuales)</td>
+		<td align="" colspan="2">Expenses (Monthly)</td>
 	</tr>
 
 <?php
@@ -82,19 +82,19 @@ Template::Show('finance_header.php');
 		<td align="" colspan="2" style="padding: 1px;"></td>
 	</tr>
 	<tr>
-		<td align="right"><strong>Gastos totales:</strong></td>
+		<td align="right"><strong>Total expenses:</strong></td>
 		<td align="right"> <?php echo str_replace('$', Config::Get('MONEY_UNIT'), FinanceData::FormatMoney(-1 * $month_data->expenses_total));?></td>
 	</tr>
 	
 	<tr class="balancesheet_header">
-		<td align="" colspan="2">Ingreso neto</td>
+		<td align="" colspan="2">Total revenues</td>
 	</tr>
 	
 	<tr class="balancesheet_header" style="border-bottom: 1px dotted">
 		<td align="" colspan="2" style="padding: 1px;"></td>
 	</tr>
 	<tr>
-		<td align="right"><strong>Umbral de ganancia:</strong></td>
+		<td align="right"><strong>revenue:</strong></td>
 		<td align="right"> <?php echo str_replace('$', Config::Get('MONEY_UNIT'), FinanceData::FormatMoney($month_data->revenue)); ?></td>
 	</tr>
 	</table>
@@ -109,7 +109,7 @@ Template::Show('finance_header.php');
   </div>
   <div class="col-lg-10">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-sort-asc" fa-lg style="color:#FFFFFF"></i> Gráfica estadística</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-sort-asc" fa-lg style="color:#FFFFFF"></i> Statistic</font></b></h5>
         <div class="card-body">
         <div align="center">
 			<?php

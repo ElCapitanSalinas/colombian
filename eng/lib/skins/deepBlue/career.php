@@ -11,11 +11,11 @@
         <table class="table table-bordered">
 			<thead>
 				<tr>
-				<th scope="col">Titulo</th>
-				<th scope="col">Horas Mínimas</th>
-				<th scope="col">Pago por hora</th>
-				<th scope="col">Aeronaves disponibles</th>
-				<th scope="col">Imagen</th>
+				<th scope="col">Name</th>
+				<th scope="col">Minimum hours</th>
+				<th scope="col">Pay Per Hour</th>
+				<th scope="col">Aircrafts</th>
+				<th scope="col">Image</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -26,7 +26,7 @@
 							<td>$<?php echo $rank->payrate; ?>/hr</td>
 							<td> 
 								<?php $rankai = CareerData::getaircrafts($rank->rankid); 
-								if(!$rankai) {echo 'Todas las aeronaves';}
+								if(!$rankai) {echo 'All the aircrafts';}
 								else {
 									$i = 0;
 									foreach($rankai as $ran) {

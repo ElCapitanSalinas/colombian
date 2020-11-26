@@ -25,12 +25,12 @@
         <table class="table table-bordered">
 		
 	<tr class="balancesheet_header" style="text-align: center">
-	<td align="left"><font color="ffffff">Mes</font></td>
-		<td align="center"><font color="ffffff">Vuelos</font></td>
-		<td align="left"><font color="ffffff">Ingresos</font></td>
-		<td align="center" nowrap><font color="ffffff">Pagos a pilotos</font></td>
-		<td align="left"><font color="ffffff">Gastos</font></td>
-		<td align="left"><font color="ffffff">Combustible</font></td>
+	<td align="left"><font color="ffffff">Month</font></td>
+		<td align="center"><font color="ffffff">Flights</font></td>
+		<td align="left"><font color="ffffff">Revenues</font></td>
+		<td align="center" nowrap><font color="ffffff">Pilots payments</font></td>
+		<td align="left"><font color="ffffff">Expenses</font></td>
+		<td align="left"><font color="ffffff">Fuel</font></td>
 		<td align="center"><font color="ffffff">Total</font></td>
 	</tr>
 	
@@ -105,7 +105,7 @@ foreach ($allfinances as $month)
   </div>
   <div class="col-lg-10">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-chevron-up" fa-lg style="color:#FFFFFF"></i> Gráfica // Activar Flash para ver</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-chevron-up" fa-lg style="color:#FFFFFF"></i> Graphic</font></b></h5>
         <div class="card-body">
 		<div align="center">
 			<?php
