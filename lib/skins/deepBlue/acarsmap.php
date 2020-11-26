@@ -50,21 +50,7 @@ var acars_map_defaults = {
 <?php
 /* See below for details and columns you can use in this table */
 ?>
-<table border = "0" width="100%" class="acarsmap">
-<thead>
-	<tr>
-		<td><b>Pilot</b></td>
-		<td><b>Flight Number</b></td>
-		<td><b>Departure</b></td>
-		<td><b>Arrival</b></td>
-		<td><b>Status</b></td>
-		<td><b>Altitude</b></td>
-		<td><b>Speed</b></td>
-		<td><b>Distance/Time Remain</b></td>
-	</tr>
-</thead>
-<tbody id="pilotlist"></tbody>
-</table>
+
 <script type="text/javascript" src="<?php echo fileurl('/lib/js/acarsmap.js');?>"></script>
 <?php
 /* This is the template which is used in the table above, for each row. 
@@ -100,15 +86,7 @@ var acars_map_defaults = {
 ?>
 <script type="text/html" id="acars_map_row">
 <tr class="<%=flight.trclass%>">
-<td><a href="<?php echo url('/profile/view');?>/<%=flight.pilotid%>"><%=flight.pilotid%> - <%=flight.pilotname%></a></td>
-<td><%=flight.flightnum%></td>
-<td><%=flight.depicao%></td>
-<td><%=flight.arricao%></td>
-<td><%=flight.phasedetail%></td>
-<td><%=flight.alt%></td>
-<td><%=flight.gs%></td>
-<td><%=flight.distremaining%> <?php echo Config::Get('UNITS');?> / <%=flight.timeremaining%></td>
-</tr>
+
 </script>
 
 <?php
@@ -119,10 +97,7 @@ var acars_map_defaults = {
 ?>
 <script type="text/html" id="acars_map_bubble">
 <span style="font-size: 10px; text-align:left; width: 100%" align="left">
-<a href="<?php echo url('/profile/view');?>/<%=flight.pilotid%>"><%=flight.pilotid%> - <%=flight.pilotname%></a><br />
-<strong>Flight <%=flight.flightnum%></strong> (<%=flight.depicao%> to <%=flight.arricao%>)<br />
-<strong>Status: </strong><%=flight.phasedetail%><br />
-<strong>Dist/Time Remain: </strong><%=flight.distremaining%> <?php echo Config::Get('UNITS');?> / <%=flight.timeremaining%><br />
+
 </span>
 </script>
 
