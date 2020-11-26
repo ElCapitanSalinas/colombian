@@ -43,7 +43,7 @@ Config::Set('URL_REWRITE', false);
 
 # Maintenance mode - this disables the site to non-admins
 Config::Set('MAINTENANCE_MODE', false);
-Config::Set('MAINTENANCE_MESSAGE', 'We are currently down for maintenance, please check back soon.');
+Config::Set('MAINTENANCE_MESSAGE', 'Estamos en mantenimiento, cualquier cosa con la nea que tenemos de WebMaster :).');
 
 /*	Whether you have the /admin/maintenance.php script added into cron.
 	If you do, set this to true. This saves many DB calls since phpVMS will
