@@ -73,12 +73,12 @@
         <div class="card-body">
         <div class="deepBlue-blockcontent"><p>
         <div class="row">
-	<div class="col-lg-8 col-md-12 col-12 col-sm-12">
+	<div class="">
 		<div class="card">
 			<div class="card-header">
 				<h4>Live Map</h4>
 			</div>
-			<div class="card-body p-0">
+			<div class="card-body">
 				
         <?php MainController::Run('ACARS', 'index'); ?>
 			</div>
@@ -89,21 +89,11 @@
 			$countBids = (is_array($lastbids) ? count($lastbids) : 0);
 		?>
 		<div class="card">
-			<div class="card-header">
-				<h4></h4>
-				<div class="card-header-action">
-					<?php if(!$countBids) { ?>
-					<a href="javascript::">No Departures</a>
-					<?php } else { ?>
-					<a href="javascript::">Upcoming</a>
-					<?php } ?>
-				</div>
-			</div>
 			<div class="card-body">
 				<?php if(!$countBids) { ?>
 				<div class="alert alert-danger">
 					<div class="alert-title">Oops</div>
-					Looks like there are no upcoming departures at the moment
+					Parece que no hay salidas al momento
 				</div>
 				<?php } else { ?>
 			<div class="table-responsive">
