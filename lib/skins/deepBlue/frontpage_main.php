@@ -69,7 +69,7 @@
   </div>
   <div class="col-lg-9">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #D82F2F;"><b><font color="#FFFFFF">Live Map</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF">Live Map</font></b></h5>
         <div class="card-body">
         <?php MainController::Run('ACARS', 'index'); ?>
 			</div>
