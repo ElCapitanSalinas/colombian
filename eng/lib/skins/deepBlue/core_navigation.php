@@ -28,7 +28,7 @@
     <i class="fa fa-briefcase"></i> About Us
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-     <a class="dropdown-item" href="https://colombianairways.com/index.php/eng/pages/objectives">Objectives</a>
+     <a class="dropdown-item" href="https://colombianairways.com/eng/index.php/pages/objectives">Objectives</a>
      <a class="dropdown-item" href="https://colombianairways.com/docs/GOM.pdf">Rs & Rs</a>
       <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/Pilots">Pilots</a>
       <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/vStaff">Staff</a>
