@@ -154,6 +154,7 @@
      <?php
      }
      ?>
+     <li>&nbsp;</li>
      <li><a data-toggle="nav-item"><img src="https://media.discordapp.net/attachments/501578269355671553/781660738522710096/CO.png" alt=""></a></li>
      <li>&nbsp;</li>
      <li><a data-toggle="nav-item"><img src="https://media.discordapp.net/attachments/501578269355671553/781660734030348328/US.png" alt=""></a></li>
