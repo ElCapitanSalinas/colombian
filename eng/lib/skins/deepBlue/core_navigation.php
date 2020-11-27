@@ -144,7 +144,6 @@
         // Show these if they haven't logged in yet
      ?>
      <li><a data-toggle="modal" href="#login"><button type="button" class="btn btn-success"><i class="fa fa-user"></i></button></a></li>
-     <li><a data-toggle="nav-link"><img src="https://media.discordapp.net/attachments/501578269355671553/781660738522710096/CO.png" alt=""></a> | <img src="https://media.discordapp.net/attachments/501578269355671553/781660734030348328/US.png" alt=""></li>
      <?php
      }
      else
@@ -155,6 +154,7 @@
      <?php
      }
      ?>
+     <li><a data-toggle="nav-item"><img src="https://media.discordapp.net/attachments/501578269355671553/781660738522710096/CO.png" alt=""></a> | <img src="https://media.discordapp.net/attachments/501578269355671553/781660734030348328/US.png" alt=""></li>
 
 
 </ul>
