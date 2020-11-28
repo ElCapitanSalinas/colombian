@@ -6,7 +6,7 @@
 <section class="page-contents">
 <div class="container">
 <br />
-<div class="row">
+
 	
 			<?php 
 		if(!$allcategories)
@@ -20,6 +20,7 @@
 		?>
 			<p>
 				<h2><strong></strong></h2></p>
+				<div class="row">
 		<div class="col-lg-3">
 		<div class="card w-175">
 			<h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><?php echo $category->name?></font></b></h5>
