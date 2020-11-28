@@ -39,7 +39,7 @@
 			{
 		?>
 					<div class="card-body">
-						<img class="img-fluid" src="<?php echo $download->image; ?>" alt="<?php echo $download->name; ?>">
+						<img class="img-fluid" src="<?php echo $download->image; ?>" alt="<?php echo $download->name; ?>" width="25%">
 						<br> Nombre:
 						<a href="<?php echo url('/downloads/dl/'.$download->id);?>">
 							<?php echo $download->name?>
