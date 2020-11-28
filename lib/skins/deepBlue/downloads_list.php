@@ -6,8 +6,9 @@
 <section class="page-contents">
 <div class="container">
 <br />
-
-	
+<div class="row">
+	<div class="col-lg-3">
+		<div class="card w-175">
 			<?php 
 		if(!$allcategories)
 		{
@@ -20,9 +21,6 @@
 		?>
 			<p>
 				<h2><strong></strong></h2></p>
-				<div class="row">
-		<div class="col-lg-3">
-		<div class="card w-175">
 			<h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><?php echo $category->name?></font></b></h5>
 			<ul>
 
@@ -40,7 +38,7 @@
 			{
 		?>
 					<div class="card-body">
-						<img class="img-fluid" src="<?php echo $download->image; ?>" alt="<?php echo $download->name; ?>" width="25%">
+						<img class="img-fluid" src="<?php echo $download->image; ?>" alt="<?php echo $download->name; ?>">
 						<br> Nombre:
 						<a href="<?php echo url('/downloads/dl/'.$download->id);?>">
 							<?php echo $download->name?>
@@ -48,8 +46,6 @@
 						<?php echo $download->description?><br />
 						<em>Descargado <?php echo $download->hits?> veces</em></li>
 						</div>
-				</div>
-			</div>		
 						<?php
 				}
 			?>
