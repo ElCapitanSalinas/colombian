@@ -45,6 +45,7 @@
 						</a><br /> Descripción:
 						<?php echo $download->description?><br />
 						<em>Descargado <?php echo $download->hits?> veces</em></li>
+						</div>
 						<?php
 				}
 			?>
