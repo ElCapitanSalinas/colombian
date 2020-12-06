@@ -92,7 +92,7 @@
               </div>
             </div>
             <br>
-<p>Copyright © 2020 <?php echo SITE_NAME; ?>. Todos los derechos reservados. Programado y diseñado por <b> Juan Felipe Salinas</b></p>
+<p>Copyright © 2020 <?php echo SITE_NAME; ?>. All rights reserved. Developed and designed by <b> Juan Felipe Salinas</b></p>
 </footer>
 <script type="text/javascript" src="<?php echo SITE_URL?>/lib/skins/deepBlue/js/script.js"></script>
 <script type="text/javascript" src="<?php echo SITE_URL?>/lib/skins/deepBlue/js/script.responsive.js"></script>
