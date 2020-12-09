@@ -86,7 +86,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="<?php echo url('/schedules/brief/'.$bid->id);?>" class="btn btn-dark" style="width: 100%">Simbrief</a>
+                        <a href="<?php echo url('http://www.colombianairways.com/index.php/SimBrief/schedules/brief/'.$bid->id);?>" class="btn btn-dark" style="width: 100%">Simbrief</a>
                         <br/><br/>
                         <a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>" class="btn btn-warning" style="width: 100%">Reportar manual</a>
                     </div>

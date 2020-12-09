@@ -6,6 +6,7 @@
     <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
     <link href="<?php echo SITE_URL?>/lib/skins/deepBlue/css/all-stylesheets.css" rel="stylesheet" media="all" />
+    <script type="text/javascript" src="<?php echo fileurl('lib/js/simbrief.apiv1.js');?>"></script>
 <link rel="shortcut icon" type="image/png" href="<?php echo SITE_URL ?>/lib/skins/deepBlue/img/favicon.png"/>
 <style>.deepBlue-content .deepBlue-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
 .ie7 .deepBlue-post .deepBlue-layout-cell {border:none !important; padding:0 !important; }
