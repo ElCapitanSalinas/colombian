@@ -2,9 +2,7 @@
 <div class="container">
 <?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
 <br />
-<div class="col-lg-1">
-  </div>
-  <div class="col-lg-10">
+  <div class="col-lg-12">
 	<div class="card w-175">
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i>SimBrief</font></b></h5>
         <div class="card-body">
