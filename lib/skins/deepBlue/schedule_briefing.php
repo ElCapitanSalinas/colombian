@@ -148,7 +148,7 @@
 	<a href="http://flightaware.com/resources/weather_maps/" target="_blank">View additional weather graphs</a>
 </div>
 <div align="right" style="font-size: small;">Data Courtesy of <a href="http://flightaware.com" target="_new">FlightAware</a></div>
-<center><button type="button" style="width:100%" class="btn btn-primary btn-lg" onclick="simbriefsubmit('<?php echo SITE_URL; ?>/index.php/SimBrief');" style="font-size:30px" value="Generate SimBrief">Click to Generate OFP</button></center>
+<center><a href="http://www.yoursitelink/index.php/SimBrief"><button type="button" style="width:100%" class="btn btn-primary btn-lg" style="font-size:30px" value="Generate SimBrief">Click to Generate OFP</button><a></center>
 <br />
 </div>
 </section>
