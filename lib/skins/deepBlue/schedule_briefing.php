@@ -1,20 +1,7 @@
+<section class="page-contents">
+<div class="container">
 <?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
-<style>
-    .routeimg {
-        height: 35px;
-        margin-right: 3px;
-    }
-</style>
-<div class="section-header">
-	<h1>Schedule Briefing</h1>
-    <div class="section-header-breadcrumb">
-        <div class="breadcrumb-item active"><a href="<?php echo SITE_URL; ?>">Dashboard</a></div>
-        <div class="breadcrumb-item"><a href="javascript::">Flight Operations</a></div>
-        <div class="breadcrumb-item"><a href="javascript::">My Reservations</a></div>
-        <div class="breadcrumb-item">Schedule Briefing</div>
-    </div>
-</div>
-
+<br />
 <form id="sbapiform">
     <div class="row">
         <div class="col-md-12">
@@ -201,3 +188,4 @@
     	</div>
     </div>
 </form>
+</section>
