@@ -2,12 +2,11 @@
 <div class="container">
 <?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
 <br />
-<h3><i class="fa fa-map" fa-lg style="color:#0C336E"></i> Flight Briefing</h3>>
-<div class="col-sm-1">
+<div class="col-lg-1">
   </div>
   <div class="col-lg-10">
 	<div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> SimBrief</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i>SimBrief</font></b></h5>
         <div class="card-body">
 		<center><iframe src="https://www.simbrief.com/system/dispatch.php?newflight=1" width="1440" height="3000"  style="overflow:scroll; width: 100%" scrolling="0"></iframe></center>
 		</div>
