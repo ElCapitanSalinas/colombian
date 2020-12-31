@@ -67,6 +67,7 @@
                             <?php
                         }
                         ?>
+                        <hr>
                         <input type="hidden" name="count" value = "<?php echo count($schedules);?>">
                         <input type="hidden" name="pilotid" value="<?php echo $pilotid;?>">
                         <input type="submit" name="submit" class="btn btn-dark"value="Agendar">
