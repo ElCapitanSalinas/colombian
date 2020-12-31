@@ -32,7 +32,7 @@ $airlines = OperationsData::getAllAirlines(true);
         <hr>
         <table>
             <tr>
-                <td width ="25%"><b>Ubicación Actual:</b></td>
+                <td width ="25%"><b>Ubicación Actual*:</b></td>
                 <td width ="75%"><select id="depicao" name="depicao" class="form-control">
                     <option value="<?php echo $last_location->arricao?>"><?php echo $last_location->arricao?> (<?php echo $last_name->name?>)</option>
                 </td>
@@ -40,7 +40,7 @@ $airlines = OperationsData::getAllAirlines(true);
             <tr>
                 <td width ="25%"><b>Aerolinea:</b></td>
                 <td width ="75%"><select id="airline" name="airline" class="form-control">
-                    <option value="">Selecciona una aerolinea</option>
+                    <option value="">Selecciona una aerolínea</option>
                     <?php
                     if(!$airlines) $airlines = array();
                     foreach($airlines as $airline)
@@ -64,7 +64,7 @@ $airlines = OperationsData::getAllAirlines(true);
                 </td>
             </tr>
             <tr>
-                <td width ="25%"><b>Numero de vuelos:</b></td>
+                <td width ="25%"><b>Número de vuelos a agendar:</b></td>
                 <td width ="75%"><select id="count" name="count" class="form-control">
                     <option value="5">5</option>
                     <option value="10">10</option>
