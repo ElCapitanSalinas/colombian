@@ -8,8 +8,6 @@
 */
 ?>
 
-<p><a href="<?php echo SITE_URL?>/index.php/RandomFlights">Start New Flight Search</a></p>
-
 <section class="page-contents">
 <div class="container">
 <br />
@@ -18,18 +16,18 @@
   </div>
     <div class="col-lg-10">
         <div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Medallas</font></b></h5>
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Resultados</font></b></h5>
             <div class="card-body">
-            
+                <div id="imprimir">
                 <table width="98%" border="0" class="table table-bordered" cellspacing="0">
                     <tr>
-                        <th align = "center" <strong>Airline</strong></th>
-                        <th align = "center" <strong>Flight #</strong></th>
-                        <th align = "center" <strong>Aircraft</strong></th>
-                        <th align = "center" <strong>Departure</strong></th>
-                        <th align = "center" <strong>Arrival</strong></th>
-                        <th align = "center" <strong>Duration</strong></th>
-                        <th align = "center" <strong>Price</strong></th>
+                        <th align = "center" <strong>Aerolinea</strong></th>
+                        <th align = "center" <strong>Vuelo #</strong></th>
+                        <th align = "center" <strong>Aeronave</strong></th>
+                        <th align = "center" <strong>Salida</strong></th>
+                        <th align = "center" <strong>Llegada</strong></th>
+                        <th align = "center" <strong>Duración</strong></th>
+                        <th align = "center" <strong>Precio</strong></th>
                     </tr>
 
                     <?php
@@ -39,7 +37,7 @@
                     if (!$schedules)
                     {
                     ?>
-                    <tr><td>No Routes Found!</td></tr>
+                    <tr><td>No se han encontrado rutas!</td></tr>
                     <?php
                     } else {
                         foreach($schedules as $result)
@@ -57,6 +55,7 @@
                         </tr>
                         <?php } } ?>
                         </table>
+                    </div>
                     <form name="bidAll" id="bidAll" action="<?php echo SITE_URL?>/index.php/RandomFlights/bidAll" method="post">
 
                         <?php
@@ -70,8 +69,8 @@
                         <hr>
                         <input type="hidden" name="count" value = "<?php echo count($schedules);?>">
                         <input type="hidden" name="pilotid" value="<?php echo $pilotid;?>">
-                        <input type="submit" name="submit" class="btn btn-dark"value="Agendar">
-                        
+                        <input type="submit" name="submit" class="btn btn-dark" value="Agendar">
+                        <input type="button" onclick="printDiv('imprimir')" class="btn btn-info" value="Imprimir" />
                     </form>
                 
 
