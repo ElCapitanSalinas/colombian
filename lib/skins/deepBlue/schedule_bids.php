@@ -11,20 +11,20 @@ if(!$bids)
 <div class="container">
 <br />
 <div class="row">
-  <div class="col-lg-10">
+  <div class="col-lg-12">
         <div class="card w-175">
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Mis agendas</font></b></h5>
 			<div class="card-body">
 			<table id="tabledlist" class="table table-striped table-bordered">
 				<thead class="thead-dark">
 				<tr>
-					<th>Flight Number</th>
-					<th>Route</th>
-					<th>Aircraft</th>
-					<th>Departure Time</th>
-					<th>Arrival Time</th>
-					<th>Distance</th>
-					<th>Options</th>
+					<th>No. de vuelo</th>
+					<th>Ruta</th>
+					<th>Aeronave</th>
+					<th>Hora de salida</th>
+					<th>Hora de llegada</th>
+					<th>Distancia</th>
+					<th>Opciones</th>
 				</tr>
 				</thead>
 				<tbody>
