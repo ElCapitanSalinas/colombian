@@ -56,7 +56,7 @@
                             <td><?php echo $result->price;?></td>
                         </tr>
                         <?php } } ?>
-
+                        </table>
                     <form name="bidAll" id="bidAll" action="<?php echo SITE_URL?>/index.php/RandomFlights/bidAll" method="post">
 
                         <?php
@@ -69,10 +69,10 @@
                         ?>
                         <input type="hidden" name="count" value = "<?php echo count($schedules);?>">
                         <input type="hidden" name="pilotid" value="<?php echo $pilotid;?>">
-                        <input type="submit" name="submit" class="btn btn-dark" value="Agendar">
+                        <input type="submit" name="submit" class="btn btn-dark"value="Agendar">
                         
                     </form>
-                </table>
+                
 
             </div>
 	    </div>
