@@ -22,7 +22,7 @@
 <br>
 
 <div class="row">
-  <div class="col-lg-1">
+  <div class="col-lg-2">
   </div>
   <div class="col-lg-10">
     <div class="card w-175">
@@ -54,7 +54,7 @@
 	      </div>
 	    </div>
     </div>
-    <div class="col-lg-1">
+    <div class="col-lg-2">
   </div>
 </div>
 
