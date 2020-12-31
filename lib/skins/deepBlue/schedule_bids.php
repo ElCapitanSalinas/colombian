@@ -40,7 +40,12 @@ if(!$bids)
 					<td><?php echo $bid->distance;?></td>
 					<td>
 					<a href="<?php echo url('/schedules/brief/'.$bid->id);?>" class="btn btn-dark" style="width: 50%; font-size: 12px;">Simbrief</a>
+					<br/>
 					<a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>" class="btn btn-warning" style="width: 50%; font-size: 12px;">Manual RPRT</a>
+					<br/>
+					<button type="button" class="btn btn-danger" style="width: 50%; font-size: 12px;" data-toggle="modal" data-target="#exampleModal">
+						Cancelar Reserva
+					</button>
 					<a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>">File PIREP</a><br />
 						<a id="<?php echo $bid->bidid; ?>" class="deleteitem" href="<?php echo url('/schedules/removebid');?>">Remove Bid *</a><br />
 						<a href="<?php echo url('/schedules/brief/'.$bid->id);?>">Pilot Brief</a><br />
@@ -48,6 +53,30 @@ if(!$bids)
 						
 					</td>
 				</tr>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel"><b>Error!</b></h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+							<div class="card text-white bg-danger mb-3">
+								<div class="card-body">
+									<h5 class="card-title"><strong>La función se encuentra deshabilitada.</strong></h5>
+									<p class="card-text">Contacta a un administrador para que elimimine la reserva.</p>
+								</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							</div>
+							</div>
+						</div>
+						</div>
 				<?php
 				}
 				?>
