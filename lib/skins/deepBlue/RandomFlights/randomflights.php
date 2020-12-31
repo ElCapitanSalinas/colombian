@@ -15,9 +15,10 @@
   <div class="col-sm-1">
   </div>
     <div class="col-lg-10">
-        <div class="card w-175" id="imprimir">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Itinerario</font></b></h5>
+        <div class="card w-175">
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Resultados</font></b></h5>
             <div class="card-body">
+                <div id="imprimir">
                 <table width="98%" border="0" class="table table-bordered" cellspacing="0">
                     <tr>
                         <th align = "center" <strong>Aerolinea</strong></th>
@@ -54,6 +55,7 @@
                         </tr>
                         <?php } } ?>
                         </table>
+                    </div>
                     <form name="bidAll" id="bidAll" action="<?php echo SITE_URL?>/index.php/RandomFlights/bidAll" method="post">
 
                         <?php
