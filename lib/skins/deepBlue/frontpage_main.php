@@ -20,6 +20,64 @@
          ?>
          <!-- End Downloads -->
 <br>
+
+<div class="row">
+  <div class="col-lg-2">
+  <div class="col-lg-10">
+  <div class="card w-175">
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Top aterrizajes</font></b></h5>
+        <div class="card-body">
+        <table width="100%" class="table table-bordered">
+            <tr>
+                <td>Piloto</td>
+                <td>Aeronave</td>
+                <td>Aeropuerto</td>
+                <td>Landing Rate</td>
+                <td>Fecha</td>
+            </tr>
+        <?php
+            foreach($stats as $stat)
+            {
+                $pilot = PilotData::getPilotData($stat->pilotid);
+                $aircraft = OperationsData::getAircraftInfo($stat->aircraft);
+                echo '<tr>';
+                echo '<td>'.PilotData::getPilotCode($pilot->code, $pilot->pilotid).' - '.$pilot->firstname.' '.$pilot->lastname.'</td>';
+                echo '<td>'.$aircraft->fullname.'</td>';
+                echo '<td>'.$stat->arricao.'</td>';
+                echo '<td>'.$stat->landingrate.'</td>';
+                echo '<td>'.date(DATE_FORMAT, strtotime($stat->submitdate)).'</td>';
+                echo '</tr>';
+            }
+        ?>
+        </table>
+        <table class="table table-bordered">
+			<thead>
+				<tr>
+				<th scope="col">Premio</th>
+				<th scope="col">Descripción</th>
+				<th scope="col">Imagen</th>
+				</tr>
+			</thead>
+			<tbody>
+			<?php
+			foreach($awards as $aw);
+			{
+			?>
+			<tr id="row<?php echo $aw->awardid;?>">
+				<td align="center"><?php echo $aw->name; ?></td>
+				<td align="center"><?php echo $aw->descrip; ?></td>
+				<td align="center"><img src="<?php echo $aw->image; ?>" /></td>
+				</tr>
+			<?php
+			}
+			?>
+	</tbody>
+	</table>
+	</div>
+	</div>
+  </div>
+</div>
+
 <div class="row">
   <div class="col-lg-9">
         <div class="card w-175">

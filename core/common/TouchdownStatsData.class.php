@@ -64,7 +64,6 @@ class TouchdownStatsData extends CodonData  {
         return DB::get_results($query);
     }
 
-
     public static function pilot_average($pilotid) {
         $stats = self::pilot_stats($pilotid);
         $total = 0;
@@ -96,15 +95,5 @@ class TouchdownStatsData extends CodonData  {
 
         return $average;
     }
-    
-    	public static function get_landingstats_currentmonth($howmany){     
-       $query =  "SELECT pilotid, code, flightnum, depicao, arricao, aircraft, landingrate, submitdate FROM `".TABLE_PREFIX."pireps`
-                  WHERE landingrate < '0'
-                  AND YEAR(submitdate)=YEAR(curdate())
-  AND MONTH(submitdate)=MONTH(curdate())
-          ORDER BY landingrate DESC
-                  LIMIT $howmany";
-	return DB::get_results($query);
 
-}
 }
