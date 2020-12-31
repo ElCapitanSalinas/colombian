@@ -24,7 +24,7 @@
 <div class="row">
   <div class="col-lg-2">
   </div>
-  <div class="col-lg-10">
+  <div class="col-lg-8">
     <div class="card w-175">
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Top aterrizajes</font></b></h5>
         <div class="card-body">
