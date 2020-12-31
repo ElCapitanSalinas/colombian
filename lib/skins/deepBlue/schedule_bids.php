@@ -3,45 +3,58 @@
 <?php
 if(!$bids)
 {
-	echo '<p align="center">You have not bid on any flights</p>';
+	echo '<div class="col-md-12"><div class="alert alert-danger">No tienes agenda en ningún vuelo</div></div>';
 	return;
 }
 ?>
-<table id="tabledlist" class="tablesorter">
-<thead>
-<tr>
-	<th>Flight Number</th>
-	<th>Route</th>
-	<th>Aircraft</th>
-	<th>Departure Time</th>
-	<th>Arrival Time</th>
-	<th>Distance</th>
-	<th>Options</th>
-</tr>
-</thead>
-<tbody>
-<?php
-foreach($bids as $bid)
-{
-?>
-<tr id="bid<?php echo $bid->bidid ?>">
-	<td><?php echo $bid->code . $bid->flightnum; ?></td>
-	<td align="center"><?php echo $bid->depicao; ?> to <?php echo $bid->arricao; ?></td>
-	<td align="center"><?php echo $bid->aircraft; ?> (<?php echo $bid->registration?>)</td>
-	<td><?php echo $bid->deptime;?></td>
-	<td><?php echo $bid->arrtime;?></td>
-	<td><?php echo $bid->distance;?></td>
-	<td><a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>">File PIREP</a><br />
-		<a id="<?php echo $bid->bidid; ?>" class="deleteitem" href="<?php echo url('/schedules/removebid');?>">Remove Bid *</a><br />
-		<a href="<?php echo url('/schedules/brief/'.$bid->id);?>">Pilot Brief</a><br />
-		<a href="<?php echo url('/schedules/boardingpass/'.$bid->id);?>" />Boarding Pass</a>
-		
-	</td>
-</tr>
-<?php
-}
-?>
-</tbody>
-</table>
+<section class="page-contents">
+<div class="container">
+<br />
+<div class="row">
+  <div class="col-lg-10">
+        <div class="card w-175">
+        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Mis agendas</font></b></h5>
+			<div class="card-body">
+			<table id="tabledlist" class="table table-striped table-bordered">
+				<thead class="thead-dark">
+				<tr>
+					<th>Flight Number</th>
+					<th>Route</th>
+					<th>Aircraft</th>
+					<th>Departure Time</th>
+					<th>Arrival Time</th>
+					<th>Distance</th>
+					<th>Options</th>
+				</tr>
+				</thead>
+				<tbody>
+				<?php
+				foreach($bids as $bid)
+				{
+				?>
+				<tr id="bid<?php echo $bid->bidid ?>">
+					<td><?php echo $bid->code . $bid->flightnum; ?></td>
+					<td align="center"><?php echo $bid->depicao; ?> to <?php echo $bid->arricao; ?></td>
+					<td align="center"><?php echo $bid->aircraft; ?> (<?php echo $bid->registration?>)</td>
+					<td><?php echo $bid->deptime;?></td>
+					<td><?php echo $bid->arrtime;?></td>
+					<td><?php echo $bid->distance;?></td>
+					<td><a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>">File PIREP</a><br />
+						<a id="<?php echo $bid->bidid; ?>" class="deleteitem" href="<?php echo url('/schedules/removebid');?>">Remove Bid *</a><br />
+						<a href="<?php echo url('/schedules/brief/'.$bid->id);?>">Pilot Brief</a><br />
+						<a href="<?php echo url('/schedules/boardingpass/'.$bid->id);?>" />Boarding Pass</a>
+						
+					</td>
+				</tr>
+				<?php
+				}
+				?>
+				</tbody>
+				</table>		
+			</div>
+		</div>
+	</div>
+</section>
+
 <p align="right">* - double click</p>
 <hr>
