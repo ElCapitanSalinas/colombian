@@ -68,7 +68,7 @@ $airlines = OperationsData::getAllAirlines(true);
                 <td width ="75%"><select id="count" name="count" class="form-control">
                     <option value="6">6</option>
                     <option value="10">10</option>
-                    <option value="15">15</option>
+                    <option value="16">16</option>
                 </select></td>
             </tr>
             <tr>
