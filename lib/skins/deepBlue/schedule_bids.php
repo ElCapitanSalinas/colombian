@@ -40,9 +40,9 @@ if(!$bids)
 					<td><?php echo $bid->distance;?></td>
 					<td>
 					<a href="<?php echo url('/schedules/brief/'.$bid->id);?>" class="btn btn-dark" style="width: 65%; font-size: 12px;">Simbrief</a>
-					<br/>
+					<br>
 					<a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>" class="btn btn-warning" style="width: 65%; font-size: 12px;">Manual RPRT</a>
-					<br/>
+					<br>
 					<button type="button" class="btn btn-danger" style="width: 65%; font-size: 12px;" data-toggle="modal" data-target="#exampleModal">
 						Cancelar Reserva
 					</button>
