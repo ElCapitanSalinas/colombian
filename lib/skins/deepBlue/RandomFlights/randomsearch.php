@@ -28,10 +28,11 @@ $airlines = OperationsData::getAllAirlines(true);
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Generar Itinerario</font></b></h5>
             <div class="card-body">
             <form name="RandomFlights" id="RandomFlights" action="<?php echo SITE_URL?>/index.php/RandomFlights/getRandomFlights" method="post">
-        <td><b>Depende de la ubicación actual</b> </td>
+        <td><b>*La ubicación corresponde al destino de tu último vuelo</b> </td>
+        <hr>
         <table>
             <tr>
-                <td width ="25%"><b>ubicación Actual:</b></td>
+                <td width ="25%"><b>Ubicación Actual:</b></td>
                 <td width ="75%"><select id="depicao" name="depicao" class="form-control">
                     <option value="<?php echo $last_location->arricao?>"><?php echo $last_location->arricao?> (<?php echo $last_name->name?>)</option>
                 </td>
@@ -69,7 +70,7 @@ $airlines = OperationsData::getAllAirlines(true);
                     <option value="10">10</option>
                     <option value="15">15</option>
                 </select></td>
-                <hr>
+                <td></td>
                 <td><input type="submit" name="submit" value="Buscar" class="btn btn-dark"></td>
             </tr>
         </table>
