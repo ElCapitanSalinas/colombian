@@ -28,18 +28,18 @@ $airlines = OperationsData::getAllAirlines(true);
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Generar Itinerario</font></b></h5>
             <div class="card-body">
             <form name="RandomFlights" id="RandomFlights" action="<?php echo SITE_URL?>/index.php/RandomFlights/getRandomFlights" method="post">
-        <td>Current Location Preselected </td>
+        <td><b>Depende de la ubicación actual</b> </td>
         <table>
             <tr>
-                <td width ="25%"><b>Current Location:</b></td>
-                <td width ="75%"><select id="depicao" name="depicao">
+                <td width ="25%"><b>ubicación Actual:</b></td>
+                <td width ="75%"><select id="depicao" name="depicao" class="form-control">
                     <option value="<?php echo $last_location->arricao?>"><?php echo $last_location->arricao?> (<?php echo $last_name->name?>)</option>
                 </td>
             </tr>
             <tr>
                 <td width ="25%"><b>Airline:</b></td>
-                <td width ="75%"><select id="airline" name="airline">
-                    <option value="">Select Airline</option>
+                <td width ="75%"><select id="airline" name="airline" class="form-control">
+                    <option value="">Selecciona una aerolinea</option>
                     <?php
                     if(!$airlines) $airlines = array();
                     foreach($airlines as $airline)
@@ -50,9 +50,9 @@ $airlines = OperationsData::getAllAirlines(true);
                 </td>
             </tr>
             <tr>
-                <td width ="25%"><b>Aircraft:</b></td>
-                <td width ="75%"><select id="equipment" name="equipment">
-                    <option value="">Select Equipment</option>
+                <td width ="25%"><b>Aeronave:</b></td>
+                <td width ="75%"><select id="equipment" name="equipment" class="form-control">
+                    <option value="">Selecciona una aeronave</option>
                     <?php
                     if(!$equipment) $equipment = array();
                     foreach($equipment as $equip)
@@ -63,13 +63,13 @@ $airlines = OperationsData::getAllAirlines(true);
                 </td>
             </tr>
             <tr>
-                <td width ="25%"><b>Number of Flights:</b></td>
-                <td width ="75%"><select id="count" name="count">
+                <td width ="25%"><b>Numero de vuelos:</b></td>
+                <td width ="75%"><select id="count" name="count" class="form-control">
                     <option value="5">5</option>
                     <option value="10">10</option>
                     <option value="15">15</option>
                 </select></td>
-                <td><input type="submit" name="submit" value="Find Random Flights"></td>
+                <td><input type="submit" name="submit" value="Buscar" class="btn btn-dark"></td>
             </tr>
         </table>
     </form>
