@@ -68,9 +68,12 @@ class RandomFlights extends CodonModule
 		{
 			$ret = SchedulesData::addBid($this->post->pilotid, $this->post->schedules[$i]);
 			$flight = SchedulesData::getSchedule($this->post->schedules[$i]);
-			if($ret) echo 'Flight - '.$flight->code.$flight->flightnum.' added <br/>';
+			if($ret) echo '<div class="alert alert-success" role="alert">
+			El vuelo '.$flight->code.$flight->flightnum.' fué añadido<br/>';
 		}
-		echo 'Finished';
+		echo '<div class="alert alert-success" role="alert">
+		Finalizado
+	  </div>';
 	}
 }
 ?>
