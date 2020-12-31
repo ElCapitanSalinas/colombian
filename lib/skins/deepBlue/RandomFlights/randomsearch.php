@@ -66,9 +66,9 @@ $airlines = OperationsData::getAllAirlines(true);
             <tr>
                 <td width ="25%"><b>Número de vuelos a agendar:</b></td>
                 <td width ="75%"><select id="count" name="count" class="form-control">
-                    <option value="5">5</option>
+                    <option value="6">6</option>
                     <option value="10">10</option>
-                    <option value="15">15</option>
+                    <option value="16">16</option>
                 </select></td>
             </tr>
             <tr>
