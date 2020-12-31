@@ -46,11 +46,11 @@ if(!$bids)
 					<button type="button" class="btn btn-danger" style="width: 65%; font-size: 12px;" data-toggle="modal" data-target="#exampleModal">
 						Cancelar Reserva
 					</button>
-					<a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>">File PIREP</a><br />
+					<!-- <a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>">File PIREP</a><br />
 						<a id="<?php echo $bid->bidid; ?>" class="deleteitem" href="<?php echo url('/schedules/removebid');?>">Remove Bid *</a><br />
 						<a href="<?php echo url('/schedules/brief/'.$bid->id);?>">Pilot Brief</a><br />
 						<a href="<?php echo url('/schedules/boardingpass/'.$bid->id);?>" />Boarding Pass</a>
-						
+						 -->
 					</td>
 				</tr>
 				<!-- Modal -->
