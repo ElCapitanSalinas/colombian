@@ -71,7 +71,7 @@
                         <input type="hidden" name="pilotid" value="<?php echo $pilotid;?>">
                         <input type="submit" name="submit" class="btn btn-dark" value="Agendar">
                         <input type="button" onclick="printDiv('imprimir')" class="btn btn-info" value="Imprimir" />
-                        <a href="<?php echo SITE_URL?>/index.php/RandomFlights"><div class="alert alert-warning" role="alert">Volver a sortear</div></a>
+                        <a href="<?php echo SITE_URL?>/index.php/RandomFlights"><button type="button" class="btn btn-warning">Volver a sortear</button></a>
                     </form>
                 
 
