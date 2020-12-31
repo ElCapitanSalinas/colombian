@@ -37,7 +37,7 @@ $airlines = OperationsData::getAllAirlines(true);
                 </td>
             </tr>
             <tr>
-                <td width ="25%"><b>Airline:</b></td>
+                <td width ="25%"><b>Aerolinea:</b></td>
                 <td width ="75%"><select id="airline" name="airline" class="form-control">
                     <option value="">Selecciona una aerolinea</option>
                     <?php
@@ -69,6 +69,7 @@ $airlines = OperationsData::getAllAirlines(true);
                     <option value="10">10</option>
                     <option value="15">15</option>
                 </select></td>
+                <hr>
                 <td><input type="submit" name="submit" value="Buscar" class="btn btn-dark"></td>
             </tr>
         </table>
