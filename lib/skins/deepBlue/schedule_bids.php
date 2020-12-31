@@ -42,7 +42,7 @@ if(!$bids)
 					<a href="<?php echo url('/schedules/brief/'.$bid->id);?>" class="btn btn-dark" style="width: 100%; font-size: 12px;">Simbrief</a>
 					<br>
 					<a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>" class="btn btn-warning" style="width: 100%; font-size: 12px;">Manual RPRT</a>
-					<p>&nbsp;</p>
+					<p><font size="3px">&nbsp;</p>
 					<button type="button" class="btn btn-danger" style="width: 100%; font-size: 12px;" data-toggle="modal" data-target="#exampleModal">
 						Cancelar Reserva
 					</button>
