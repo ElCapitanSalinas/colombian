@@ -9,7 +9,7 @@
 
 $pilotid = Auth::$userinfo->pilotid;
 $last_location = PIREPData::getLastReports($pilotid, 1);
-if(!$last_location) {$last_location->arricao = Auth::$userinfo ->hub};
+if(!$last_location) {$last_location->arricao = Auth::$userinfo ->hub;}
 $last_name = OperationsData::getAirportInfo($last_location->arricao);
 $equipment = OperationsData::GetAllAircraftSearchList(true);
 $airlines = OperationsData::getAllAirlines(true);
