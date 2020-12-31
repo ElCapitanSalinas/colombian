@@ -33,7 +33,7 @@ if(!$bids)
 				?>
 				<tr id="bid<?php echo $bid->bidid ?>">
 					<td><?php echo $bid->code . $bid->flightnum; ?></td>
-					<td align="center"><?php echo $bid->depicao; ?> a <?php echo $bid->arricao;?><i><?php echo $bid->route;?></i></td>
+					<td align="center"><?php echo $bid->depicao; ?> a <?php echo $bid->arricao; echo $bid->route;?></td>
 					<td align="center"><?php echo $bid->aircraft; ?> (<?php echo $bid->registration?>)</td>
 					<td><?php echo $bid->deptime;?></td>
 					<td><?php echo $bid->arrtime;?></td>
