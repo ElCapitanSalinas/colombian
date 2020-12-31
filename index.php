@@ -45,6 +45,7 @@
 define('CODON_MODULES_PATH', dirname(__FILE__).'/core/modules');
 define('CODON_DEFAULT_MODULE', 'Frontpage');
 include 'core/codon.config.php';
+error_reporting(0);
 
 define('SKINS_PATH', LIB_PATH.DS.'skins'.DS.CURRENT_SKIN);
 Template::setSkinPath(SKINS_PATH);
