@@ -39,11 +39,11 @@ if(!$bids)
 					<td><?php echo $bid->arrtime;?></td>
 					<td><?php echo $bid->distance;?></td>
 					<td>
-					<a href="<?php echo url('/schedules/brief/'.$bid->id);?>" class="btn btn-dark" style="width: 75%; font-size: 12px;">Simbrief</a>
+					<a href="<?php echo url('/schedules/brief/'.$bid->id);?>" class="btn btn-dark" style="width: 80%; font-size: 12px;">Simbrief</a>
 					<br>
-					<a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>" class="btn btn-warning" style="width: 75%; font-size: 12px;">Manual RPRT</a>
+					<a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>" class="btn btn-warning" style="width: 80%; font-size: 12px;">Manual RPRT</a>
 					<br>
-					<button type="button" class="btn btn-danger" style="width: 75%; font-size: 12px;" data-toggle="modal" data-target="#exampleModal">
+					<button type="button" class="btn btn-danger" style="width: 80%; font-size: 12px;" data-toggle="modal" data-target="#exampleModal">
 						Cancelar Reserva
 					</button>
 					<!-- <a href="<?php echo url('/pireps/filepirep/'.$bid->bidid);?>">File PIREP</a><br />
