@@ -49,9 +49,9 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/-->
                         $initialarr = substr($arrpirep->firstname,0,1);
                     ?>
                     <tr>
-                        <th>Latest Arrival:</th>
+                        <th>Ultima llegada:</th>
                         <td><a href="<?php echo SITE_URL?>/index.php/pireps/viewreport/<?php echo $arrpirep->pirepid;?>"><?php echo $arrpirep->code.$arrpirep->flightnum.' ('.$arrpirep->depicao.'-'.$arrpirep->arricao.')</a> - '.$arrpirep->firstname.' '.$arrpirep->lastname?></td>
-                        <th>Latest Departure:</th>
+                        <th>Ultima salida:</th>
                         <td><a href="<?php echo SITE_URL?>/index.php/pireps/viewreport/<?php echo $deppirep->pirepid;?>"><?php echo $deppirep->code.$deppirep->flightnum.' ('.$deppirep->depicao.'-'.$deppirep->arricao.')</a> - '.$deppirep->firstname.' '.$deppirep->lastname?></td>
                     </tr>
                     
