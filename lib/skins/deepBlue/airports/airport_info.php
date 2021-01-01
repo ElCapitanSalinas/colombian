@@ -61,7 +61,7 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/-->
 
         <div class="card">
             <div class="card-body p-0">
-                <div id="airportmap" style="border-radius: 9px; width: 100%; height: 540px; position: relative; overflow: hidden;"></div>
+                <?php require('../acarsmap.php'); ?>
 			</div>
 		</div>
 	</div>
