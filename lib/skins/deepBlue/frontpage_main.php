@@ -57,7 +57,7 @@
     <div class="col-lg-2">
   </div>
 </div>
-<hr>
+<br>
 <div class="row">
   <div class="col-lg-9">
         <div class="card w-175">
