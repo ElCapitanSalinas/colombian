@@ -60,9 +60,7 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/-->
 		</div>
 
         <div class="card">
-            <div class="card-body p-0">
-                <?php require('../acarsmap.php'); ?>
-			</div>
+            
 		</div>
 	</div>
 </div>
