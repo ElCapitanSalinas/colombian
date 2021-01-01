@@ -98,6 +98,7 @@
                     ?>
                         <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/Schedules/Bids">Mi reserva</a>
                     <?php } else { ?>
+                     <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/RandomFlights">Agendar Itinerarios</a>
                         <a class="dropdown-item" href="<?php echo SITE_URL ?>/index.php/Fltbook">Agendar vuelo</a>
                     <?php } ?>
 
