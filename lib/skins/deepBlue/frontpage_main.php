@@ -25,7 +25,7 @@
   <div class="col-lg-2">
   </div>
   <div class="col-lg-8">
-        <div class="alert bg-success" role="alert" style="font-color: #ffffff">
+        <div class="alert bg-success" role="alert" style="color: #ffffff">
             <h4 class="alert-heading"><b>Bienvenido!</b></h4>
             <p>Para nosotros la calidad de los pilotos es fundamental para el buen funcionamiento de la aerolinea, por ello te invitamos a ver el TOP 5 aterrizajes!</p>
             <hr>
