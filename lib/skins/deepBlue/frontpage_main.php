@@ -25,17 +25,12 @@
   <div class="col-lg-2">
   </div>
   <div class="col-lg-8">
-    <div class="card w-175">
-        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Top aterrizajes</font></b></h5>
-        <div class="card-body">
-        <div class="alert bg-success" role="alert">
-            <h4 class="alert-heading">Bienvenido!</h4>
+        <div class="alert bg-success" role="alert" style="font-color: #ffffff">
+            <h4 class="alert-heading"><b>Bienvenido!</b></h4>
             <p>Para nosotros la calidad de los pilotos es fundamental para el buen funcionamiento de la aerolinea, por ello te invitamos a ver el TOP 5 aterrizajes!</p>
             <hr>
             <p class="mb-0">Dando click <b><a href="https://colombianairways.com/index.php/TouchDownStats/top_landings/5">Aquí</a></b>.</p>
           </div>
-	      </div>
-	    </div>
     </div>
     <div class="col-lg-2">
   </div>
