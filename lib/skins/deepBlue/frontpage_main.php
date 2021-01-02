@@ -20,44 +20,27 @@
          ?>
          <!-- End Downloads -->
 <br>
-<?php MainController::Run('TouchDownStats', 'index', 'top_landings/5'); ?>
-<!-- <div class="row">
+
+<div class="row">
   <div class="col-lg-2">
   </div>
   <div class="col-lg-8">
     <div class="card w-175">
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Top aterrizajes</font></b></h5>
         <div class="card-body">
-        <table width="100%" class="table table-bordered">
-            <tr>
-                <td>Piloto</td>
-                <td>Aeronave</td>
-                <td>Aeropuerto</td>
-                <td>Landing Rate</td>
-                <td>Fecha</td>
-            </tr>
-        <?php
-            foreach($stats as $stat)
-            {
-                $pilot = PilotData::getPilotData($stat->pilotid);
-                $aircraft = OperationsData::getAircraftInfo($stat->aircraft);
-                echo '<tr>';
-                echo '<td>'.PilotData::getPilotCode($pilot->code, $pilot->pilotid).' - '.$pilot->firstname.' '.$pilot->lastname.'</td>';
-                echo '<td>'.$aircraft->fullname.'</td>';
-                echo '<td>'.$stat->arricao.'</td>';
-                echo '<td>'.$stat->landingrate.'</td>';
-                echo '<td>'.date(DATE_FORMAT, strtotime($stat->submitdate)).'</td>';
-                echo '</tr>';
-            }
-        ?>
-        </table>
+        <div class="alert bg-success" role="alert">
+            <h4 class="alert-heading">Bienvenido!</h4>
+            <p>Para nosotros la calidad de los pilotos es fundamental para el buen funcionamiento de la aerolinea, por ello te invitamos a ver el TOP 5 aterrizajes!</p>
+            <hr>
+            <p class="mb-0">Dando click <b><a href="https://colombianairways.com/index.php/TouchDownStats/top_landings/5">Aquí</a></b>.</p>
+          </div>
 	      </div>
 	    </div>
     </div>
     <div class="col-lg-2">
   </div>
 </div>
-<br> -->
+<br>
 <br>
 <div class="row">
   <div class="col-lg-9">
