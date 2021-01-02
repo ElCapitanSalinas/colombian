@@ -20,7 +20,7 @@
          ?>
          <!-- End Downloads -->
 <br>
-<?php MainController::Run('TouchDownStats', 'index'); ?>
+<?php MainController::Run('TouchDownStats', 'index', 'top_landings/5'); ?>
 <!-- <div class="row">
   <div class="col-lg-2">
   </div>
