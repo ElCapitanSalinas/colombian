@@ -25,11 +25,11 @@
   <div class="col-lg-2">
   </div>
   <div class="col-lg-8">
-        <div class="alert bg-success" role="alert" style="color: #ffffff">
+        <div class="alert alert-success" role="alert">
             <h4 class="alert-heading"><b>Bienvenido!</b></h4>
             <p>Para nosotros la calidad de los pilotos es fundamental para el buen funcionamiento de la aerolinea, por ello te invitamos a ver el TOP 5 aterrizajes!</p>
             <hr>
-            <p class="mb-0">Dando click <b><a href="https://colombianairways.com/index.php/TouchDownStats/top_landings/5">Aquí</a></b>.</p>
+            <p class="mb-0">Dando click <b><a href="https://colombianairways.com/index.php/TouchDownStats/top_landings/5" style="color: #000">Aquí</a></b>.</p>
           </div>
     </div>
     <div class="col-lg-2">
