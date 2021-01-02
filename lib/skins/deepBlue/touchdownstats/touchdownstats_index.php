@@ -9,6 +9,7 @@
 //@copyright Copyright (c) 2009-2010, David Clark
 //@license http://creativecommons.org/licenses/by-nc-sa/3.0/
 ?>
+<br>
 <div class="row">
   <div class="col-lg-2">
   </div>
