@@ -21,7 +21,7 @@
          <!-- End Downloads -->
 <br>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-lg-2">
   </div>
   <div class="col-lg-8">
@@ -57,6 +57,7 @@
     <div class="col-lg-2">
   </div>
 </div>
+<br> -->
 <br>
 <div class="row">
   <div class="col-lg-9">
