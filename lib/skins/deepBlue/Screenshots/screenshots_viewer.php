@@ -20,7 +20,7 @@ $screenshots = ScreenshotsData::getpagnated($pagination->getLimitSql());
 
 <table width="100%">
         <tr>
-            <td width="50%"><h4>Screenshot Gallery</h4></td>
+            <td width="50%"><h4>&nbsp;&nbsp;Galería de screenshots</h4></td>
             <td width="50%" align="right">
                 <?php
                 if(Auth::LoggedIn())
@@ -28,10 +28,10 @@ $screenshots = ScreenshotsData::getpagnated($pagination->getLimitSql());
                         if(PilotGroups::group_has_perm(Auth::$usergroups, ACCESS_ADMIN))
                         {
                             echo '<form method="link" action="'.SITE_URL.'/index.php/screenshots/approval_list">
-                                <input class="mail" type="submit" value="Screenshot Approval List"></form><br />';
+                                <input class="btn btn-warning" type="submit" value="Aprobar capturas"></form><br />';
                         }
                         echo '<form method="link" action="'.SITE_URL.'/index.php/screenshots/upload">
-                        <input class="mail" type="submit" value="Upload A New Screenshot"></form></td>';
+                        <input class="btn btn-info" type="submit" value="Subir una nueva captura"></form></td>';
                      }
                      else
                      {
