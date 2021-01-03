@@ -134,7 +134,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                         }
                     ?>            
                     </div>
-                    <table>
+                    </table>
             </div>
             </td>
             <td></td>
