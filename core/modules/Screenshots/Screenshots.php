@@ -73,7 +73,7 @@ class Screenshots extends CodonModule {
             $target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
 
             if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
-                echo '<div id="success" align="center">The file '.  basename( $_FILES['uploadedfile']['name']).' has been uploaded - An Administrator will approve the screenshot prior to it being available in the gallery.</div>';
+                echo '<div id="success" class="alert alert-warning" align="center">El archivo '.  basename( $_FILES['uploadedfile']['name']).' fue subido - Un administrador aprobará la imagen para que pueda estar disponible en la galería.</div>';
 
                 $file_name = $_FILES['uploadedfile']['name'];
                 $pilot_id = Auth::$userinfo->pilotid;
