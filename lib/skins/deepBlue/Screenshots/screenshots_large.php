@@ -136,8 +136,8 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                     </table>
             </div>
             </center>
-            </td>
         </tr>
+            </td>
         
         <tr>
             <td colspan="3"><hr /></td>
@@ -145,17 +145,17 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
         <?php if(Auth::LoggedIn())
         { ?>
         <tr>
-            <td colspan="3"><h4>Add A Comment:</h4></td>
+            <td colspan="3"><h4>&nbsp;<b>Añadir un comentario:</b></h4></td>
         </tr>
         <tr>
             <td colspan="3">
                 <br />
                 <form action="<?php echo url('/Screenshots');?>" method="post" enctype="multipart/form-data">
-                <textarea name="comment" cols="50" rows="4"></textarea>
+                <textarea name="comment" class="form-control" cols="50" rows="4"></textarea>
                     <br /><br />
                     <input type="hidden" name="id" value="<?php echo $screenshot->id; ?>" />
                     <input type="hidden" name="action" value="add_comment" />
-                        <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Add Comment">
+                        <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Añadir un comentario">
                 </form>
             </td>
         </tr>
