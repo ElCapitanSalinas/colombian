@@ -109,14 +109,14 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
             <td colspan="3"><hr /></td>
         </tr>
         <tr>
-            <td align="center">
+            <td align="center" colspan="3">
             <center>
             <div class="card w-80">
                     <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Comentarios</font></b></h5>
                     <div class="card-body">
                     <table class="table table-bordered">
                     <tr>
-                        <th>Comentario</th>
+                        <th colspan="2">Comentario</th>
                         <th>Autor</th>
                     </tr>
                     <?php if(!$comments)
