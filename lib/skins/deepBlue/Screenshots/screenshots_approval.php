@@ -40,10 +40,10 @@ foreach($screenshots as $screenshot)
                                         <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" width="400px" height="300px" alt="screenshot" /><br /><br />
                                     </td>
                                     <td>
-                                        File Name: '.$screenshot->file_name.'<br /><br />
-                                        Submited By: '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).'<br /><br />
-                                        Date: '.date('m/d/Y', date(strtotime($screenshot->date_uploaded))).'<br /><br />
-                                        Description: '.$screenshot->file_description.'<br /><br />
+                                        Nombre del archivo: '.$screenshot->file_name.'<br /><br />
+                                        Enviada por: '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).'<br /><br />
+                                        Fecha: '.date('m/d/Y', date(strtotime($screenshot->date_uploaded))).'<br /><br />
+                                        Descripción: '.$screenshot->file_description.'<br /><br />
                                         <input type="hidden" name="file" value="'.$screenshot->file_name.'" />
                                         <input type="hidden" name="id" value="'.$screenshot->id.'" />
                                         <input type="hidden" name="pid" value="'.$pilot->pilotid.'" />
