@@ -79,7 +79,7 @@ class Screenshots extends CodonModule {
                 $pilot_id = Auth::$userinfo->pilotid;
                 $description = DB::escape($this->post->description);
                 if (!$description)
-                    {$description = 'No Description Provided';}
+                    {$description = 'No hay una descripción';}
                 $query = "INSERT INTO ".TABLE_PREFIX."screenshots (file_name, file_description, pilot_id, date_uploaded)
                 VALUES ('$file_name', '$description', '$pilot_id', NOW())";
 
@@ -90,7 +90,7 @@ class Screenshots extends CodonModule {
             }
 
         }
-        else {echo'<div id="error" align="center">That sucks! Your upload is not a jpg or gif file, or may be too big!</div>';}
+        else {echo'<div id="error" align="center">Oh! Tu archivo no es en formato jpg o gif, o puede ser muy pesado</div>';}
 
         if (isset($_GET['page'])){
                 $page = (int) $_GET['page'];
