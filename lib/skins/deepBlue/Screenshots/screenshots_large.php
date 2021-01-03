@@ -24,7 +24,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                 <form method="post" action="<?php echo SITE_URL ?>/index.php/Screenshots" >
                 <input type="hidden" name="action" value="last" />
                 <input type="hidden" name="id" value="<?php echo $previous->id; ?>" />
-                <input class="mail" type="submit" value="Previous Screenshot">
+                <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Imagen anterior">
                 </form>
                 <?php
                     }
@@ -41,7 +41,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                 <form method="post" action="<?php echo SITE_URL ?>/index.php/Screenshots" >
                 <input type="hidden" name="action" value="last" />
                 <input type="hidden" name="id" value="<?php echo $next->id; ?>" />
-                <input class="mail" type="submit" value="Next Screenshot">
+                <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Siguiente imagen">
                 </form>
                 <?php
                     }
@@ -63,37 +63,37 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                     {
                     $boost = ScreenshotsData::check_boost(Auth::$userinfo->pilotid, $screenshot->id);
                     if($boost->total > 0)
-                    {echo 'Already Rated';}
+                    {echo 'Ya fue botada';}
                     else
                     {
                     ?>
                     <form method="post" action="<?php echo SITE_URL ?>/index.php/Screenshots/addkarma">
                     <input type="hidden" name="id" value="<?php echo $screenshot->id; ?>" />
-                    <input class="mail" type="submit" value="Boost Rating"></form>
+                    <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Votar"></form>
                     <?php
                     }
                     }
                     else
-                    {echo 'Login To Rate Screenshot'; }
+                    {echo 'Ingresa para votar'; }
                     ?>
             </td>
         </tr>
         <tr>
             <td>
-                <b>Date Submitted:</b> <?php echo date('m/d/Y', strtotime($screenshot->date_uploaded)); ?><br />
-                <b>Description:</b> <?php 
+                <b>Enviada en:</b> <?php echo date('m/d/Y', strtotime($screenshot->date_uploaded)); ?><br />
+                <b>Descripción:</b> <?php 
                                         if(!$screenshot->file_description)
-                                        {echo 'Not Available';}
+                                        {echo 'No disponible';}
                                         else
                                         {echo $screenshot->file_description;} ?>
                 <br /></td>
             <td align="center"><b>Views:</b> <?php echo $screenshot->views; ?></td>
             <td>
-                <!-- <form><input class="mail" type="button" value="Back To Gallery" onClick="history.go(-1);return true;"> </form> -->
+                <!-- <form><input class="btn btn-dark" style="font-size: 12px;" type="button" value="Back To Gallery" onClick="history.go(-1);return true;"> </form> -->
                   <?php if(PilotGroups::group_has_perm(Auth::$usergroups, ACCESS_ADMIN))
-                        { ?><a href="<?php echo SITE_URL ?>/index.php/Screenshots/delete_screenshot?id=<?php echo $screenshot->id; ?>"><b>Delete Screenshot</b></a><?php } else {} ?>
+                        { ?><a href="<?php echo SITE_URL ?>/index.php/Screenshots/delete_screenshot?id=<?php echo $screenshot->id; ?>"><b>Borrar imagen</b></a><?php } else {} ?>
                 <form method="link" action="<?php echo SITE_URL ?>/index.php/Screenshots">
-                <input class="mail" type="submit" value="Back To Gallery"></form>
+                <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Volver a la galería"></form>
             </td>
         </tr>
         <tr>
@@ -142,7 +142,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                     <br /><br />
                     <input type="hidden" name="id" value="<?php echo $screenshot->id; ?>" />
                     <input type="hidden" name="action" value="add_comment" />
-                        <input class="mail" type="submit" value="Add Comment">
+                        <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Add Comment">
                 </form>
             </td>
         </tr>
