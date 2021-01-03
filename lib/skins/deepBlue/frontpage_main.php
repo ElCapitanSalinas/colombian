@@ -47,7 +47,7 @@
         <div class="card w-175">
         <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Medallas</font></b></h5>
         <div class="card-body">
-        
+        <?php Screenshots::show_newest_screenshot(); ?>
 	      </div>
 	      </div>
 	</div>
