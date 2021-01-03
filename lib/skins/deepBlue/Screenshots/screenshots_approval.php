@@ -12,9 +12,9 @@
 echo '<br /><center>';
 if (!$screenshots)
 {
-    echo '<div id="error">There are no screenshots awaiting approval</div>';
+    echo '<div id="error">No hay screenshots esperando a ser aprobadas</div>';
     echo '<form method="link" action="'.SITE_URL.'/index.php/Screenshots">
-                <input class="mail" type="submit" value="Back To Gallery"></form>';
+                <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Volver a la galería"></form>';
     }
 else
 {
@@ -23,32 +23,48 @@ foreach($screenshots as $screenshot)
         $pilot = PilotData::getpilotdata($screenshot->pilot_id);
         
         echo '<form action="'.SITE_URL.'/index.php/Screenshots" method="post" enctype="multipart/form-data">';
-       echo '<table class="profiletop">';
-       echo '<tr>
-                <td>
-                    <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" width="400px" height="300px" alt="screenshot" /><br /><br />
-                </td>
-                <td>
-                    File Name: '.$screenshot->file_name.'<br /><br />
-                    Submited By: '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).'<br /><br />
-                    Date: '.date('m/d/Y', date(strtotime($screenshot->date_uploaded))).'<br /><br />
-                    Description: '.$screenshot->file_description.'<br /><br />
-                    <input type="hidden" name="file" value="'.$screenshot->file_name.'" />
-                    <input type="hidden" name="id" value="'.$screenshot->id.'" />
-                    <input type="hidden" name="pid" value="'.$pilot->pilotid.'" />
-                    <input type="hidden" name="action" value="approve_screenshot" />
-                    <input class="mail" type="submit" value="Approve Screenshot!">
-                    </form>
-                    <br /><br />
-                    <form action="'.SITE_URL.'/index.php/Screenshots" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="file" value="'.$screenshot->file_name.'" />
-                    <input type="hidden" name="id" value="'.$screenshot->id.'" />
-                    <input type="hidden" name="pid" value="'.$pilot->pilotid.'" />
-                    <input type="hidden" name="action" value="reject_screenshot" />
-                    <input class="mail" type="submit" value="Reject Screenshot">
-                </td>';
-          echo '</tr>';
-          echo '</table></form>';
+       echo '
+                    <section class="page-contents">
+                <div class="container">
+                <br />
+                <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-lg-10">
+                        <div class="card w-175">
+                        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Medallas</font></b></h5>
+                        <div class="card-body">
+                        <table class="profiletop">
+                        <tr>
+                                    <td>
+                                        <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" width="400px" height="300px" alt="screenshot" /><br /><br />
+                                    </td>
+                                    <td>
+                                        File Name: '.$screenshot->file_name.'<br /><br />
+                                        Submited By: '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).'<br /><br />
+                                        Date: '.date('m/d/Y', date(strtotime($screenshot->date_uploaded))).'<br /><br />
+                                        Description: '.$screenshot->file_description.'<br /><br />
+                                        <input type="hidden" name="file" value="'.$screenshot->file_name.'" />
+                                        <input type="hidden" name="id" value="'.$screenshot->id.'" />
+                                        <input type="hidden" name="pid" value="'.$pilot->pilotid.'" />
+                                        <input type="hidden" name="action" value="approve_screenshot" />
+                                        <input class="btn btn-success" style="font-size: 12px;" type="submit" value="Approve Screenshot!">
+                                        </form>
+                                        <br /><br />
+                                        <form action="'.SITE_URL.'/index.php/Screenshots" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" name="file" value="'.$screenshot->file_name.'" />
+                                        <input type="hidden" name="id" value="'.$screenshot->id.'" />
+                                        <input type="hidden" name="pid" value="'.$pilot->pilotid.'" />
+                                        <input type="hidden" name="action" value="reject_screenshot" />
+                                        <input class="btn btn-error" style="font-size: 12px;" type="submit" value="Reject Screenshot">
+                                    </td>';
+                              echo '</tr>';
+                              echo '</table>
+                    </div>
+                    </div>
+                    </div>
+                </section>
+</form>';
 
     }
 }
