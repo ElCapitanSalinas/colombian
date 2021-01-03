@@ -49,7 +49,7 @@
 
                             <p>
                                 <input type="hidden" name="action" value="save_upload" />
-                                <input type="submit" class="btn btn-dark" value="Subir">
+                                <input type="submit" class="btn btn-dark" style="font-size: 12px;"value="Subir">
                             </p>
                         </td>
                     </tr>
