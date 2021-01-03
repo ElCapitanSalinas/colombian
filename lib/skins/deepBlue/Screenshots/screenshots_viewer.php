@@ -18,7 +18,7 @@ $pagination->setTotalRecords($total);
 $screenshots = ScreenshotsData::getpagnated($pagination->getLimitSql());
 ?>
 <br>
-<h4><b>Galería de screenshots</b></h4>
+<center><h4><b>Galería de screenshots</b></h4></center>
 <table width="100%">
         <tr>
             <td width="50%"><h4>&nbsp;&nbsp;</h4></td>
