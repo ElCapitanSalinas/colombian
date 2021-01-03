@@ -59,7 +59,7 @@
             <center>
                 <br />
                 <form method="link" action="<?php echo SITE_URL; ?>/index.php/screenshots">
-                    <input  type="submit" value="Volver a galería"></form>
+                    <input class="btn btn-dark" type="submit" value="Volver a galería"></form>
             </center>       
 	</div>
 	</div>
