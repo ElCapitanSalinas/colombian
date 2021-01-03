@@ -32,7 +32,7 @@ foreach($screenshots as $screenshot)
                 </div>
                 <div class="col-lg-10">
                         <div class="card w-175">
-                        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Aprobar imagenes</font></b></h5>
+                        <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Foto de '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).' </font></b></h5>
                         <div class="card-body">
                         <table class="profiletop">
                         <tr>
