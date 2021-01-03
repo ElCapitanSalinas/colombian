@@ -17,11 +17,11 @@ $pagination->setSize($size);
 $pagination->setTotalRecords($total);
 $screenshots = ScreenshotsData::getpagnated($pagination->getLimitSql());
 ?>
-
+<br>
+<h4><b>Galería de screenshots</b></h4>
 <table width="100%">
         <tr>
-        <td width="50%"><h4>&nbsp;&nbsp;</h4></td>
-            <td width="50%"><h4>&nbsp;&nbsp;<b>Galería de screenshots</b></h4></td>
+            <td width="50%"><h4>&nbsp;&nbsp;</h4></td>
             <td width="50%" align="right">
                 <?php
                 if(Auth::LoggedIn())
