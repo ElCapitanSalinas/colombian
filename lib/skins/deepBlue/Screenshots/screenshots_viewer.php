@@ -27,40 +27,40 @@ $screenshots = ScreenshotsData::getpagnated($pagination->getLimitSql());
                     {
                         if(PilotGroups::group_has_perm(Auth::$usergroups, ACCESS_ADMIN))
                         {
-                            echo '<form method="link" action="'.SITE_URL.'/index.php/screenshots/approval_list">
-                                <input class="btn btn-warning" type="submit" value="Aprobar capturas"></form><br />';
+                            echo '<br><form method="link" action="'.SITE_URL.'/index.php/screenshots/approval_list">
+                                <font size="12px"><input class="btn btn-warning" type="submit" value="Aprobar capturas"></form></font>';
                         }
                         echo '<form method="link" action="'.SITE_URL.'/index.php/screenshots/upload">
-                        <input class="btn btn-info" type="submit" value="Subir una nueva captura"></form></td>';
+                        <font size="12px"><input class="btn btn-info" type="submit" value="Subir una nueva captura"></form></font></td>';
                      }
                      else
                      {
-                         echo 'Login to rate or upload screenshots.';
+                         echo 'Logueate para calificar o subir capturas.';
                      }
                      ?>
         </tr>
     </table>
     <hr />
     <center>
-        <b>Click on any image to view fullsize.</b><br /><br />
+        <b>Dale click en cualquier imagen para verla ampliada.</b><br /><br />
 <?php
-if (!$screenshots) {echo '<div id="error">There are no screenshots in the database!</div>'; }
+if (!$screenshots) {echo '<div id="error">No hay capturas en la base de datos!</div>'; }
 else {
     echo '<table class="profiletop">';
     $tiles=0;
     foreach($screenshots as $screenshot) {
         $pilot = PilotData::getpilotdata($screenshot->pilot_id);
         if(!$screenshot->file_description)
-        {$screenshot->file_description = 'Not Available';}
+        {$screenshot->file_description = 'No disponible';}
         if ($tiles == '0') { echo '<tr>'; }
         echo '<td width="25%" valign="top"><br />
-                    Views: '.$screenshot->views.' - Rating: '.$screenshot->rating.'<br /><br />
+                    Vistas: '.$screenshot->views.' - Calificación: '.$screenshot->rating.'<br /><br />
                     <a href="'.SITE_URL.'/index.php/Screenshots/large_screenshot?id='.$screenshot->id.'">
-                        <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" border="0" width="200px" height="150px" alt="By: '.$pilot->firstname.' '.$pilot->lastname.'" /></a>
+                        <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" border="0" width="200px" height="150px" alt="Por: '.$pilot->firstname.' '.$pilot->lastname.'" /></a>
                             <br />
-                    <u>Submited By:</u> '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).'<br />
-                    <u>Date:</u> '.date('m/d/Y', strtotime($screenshot->date_uploaded)).'<br />
-                    <u>Description:</u> '.$screenshot->file_description.'<br /><br />
+                    <u>Enviada por:</u> '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).'<br />
+                    <u>Fecha:</u> '.date('m/d/Y', strtotime($screenshot->date_uploaded)).'<br />
+                    <u>Descripción:</u> '.$screenshot->file_description.'<br /><br />
                 </td>';
         $tiles++;
         if ($tiles == '4') {  echo '</tr>'; $tiles=0; }
