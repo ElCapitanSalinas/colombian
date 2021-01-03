@@ -64,7 +64,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                     {
                     $boost = ScreenshotsData::check_boost(Auth::$userinfo->pilotid, $screenshot->id);
                     if($boost->total > 0)
-                    {echo 'Ya fue botada';}
+                    {echo 'Ya fue votada';}
                     else
                     {
                     ?>
@@ -109,8 +109,10 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
             <td colspan="3"><hr /></td>
         </tr>
         <tr>
-            <td colspan="2"><h4>Comments:</h4></td>
-            <td>Posted By:</td>
+            <td colspan="2"><h4>Comments:</h4>
+            Posted By:
+            </td>
+            <td></td>
         </tr>
         <?php if(!$comments)
             {echo '<tr><td colspan="3">No Comments</td></tr>';}
