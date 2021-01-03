@@ -12,8 +12,8 @@
 $pilot = PilotData::getPilotData($screenshot->pilot_id);
 
 echo '<center>';
-echo '<img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" style="max-width: 170px;" alt="Newest Screenshot" />
-                <br />Submitted By '.PilotData::GetPilotCode($pilot->code, $screenshot->pilot_id)
+echo '<img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" style="max-width: 170px;" alt="Ultima imagen" />
+                <br />Enviada por: '.PilotData::GetPilotCode($pilot->code, $screenshot->pilot_id)
     .'<br />';
 echo $date;
 echo '</center>';
