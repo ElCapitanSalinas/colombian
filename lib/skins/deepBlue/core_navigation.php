@@ -49,6 +49,9 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo SITE_URL ?>/index.php/Acars">Mapa</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo SITE_URL ?>/index.php/Screenshots">Galería</a>
+      </li>
          <!-- Start Downloads -->
          <?php
          if(!Auth::LoggedIn())
