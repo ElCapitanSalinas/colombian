@@ -137,7 +137,6 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
             </div>
             </center>
             </td>
-            <td></td>
         </tr>
         
         <tr>
