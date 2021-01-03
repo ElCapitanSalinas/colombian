@@ -20,7 +20,8 @@ $screenshots = ScreenshotsData::getpagnated($pagination->getLimitSql());
 
 <table width="100%">
         <tr>
-            <td width="50%"><h4>&nbsp;&nbsp;Galería de screenshots</h4></td>
+        <td width="50%"><h4>&nbsp;&nbsp;</h4></td>
+            <td width="50%"><h4>&nbsp;&nbsp;<b>Galería de screenshots</b></h4></td>
             <td width="50%" align="right">
                 <?php
                 if(Auth::LoggedIn())
