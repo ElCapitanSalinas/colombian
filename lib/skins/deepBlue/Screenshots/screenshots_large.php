@@ -116,7 +116,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                     <div class="card-body">
                     <table class="table table-bordered">
                     <tr>
-                        <th colspan="2">Comentario</th>
+                        <th colspan="3">Comentario</th>
                         <th>Autor</th>
                     </tr>
                     <?php if(!$comments)
@@ -126,7 +126,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                             foreach($comments as $comment){
                                 $pilot = PilotData::getPilotData($comment->pilot_id);
                                 echo '<tr>';
-                                echo '<td colspan="2">'.$comment->comment.'</td>';
+                                echo '<td colspan="3">'.$comment->comment.'</td>';
                                 echo '<td>'.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getPilotCode($pilot->code, $pilot->pilotid).'</td>';
                                 echo '</tr>';
                             }
