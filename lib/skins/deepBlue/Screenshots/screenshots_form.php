@@ -37,7 +37,7 @@
                             </p>
 
                             <p>
-                                <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+                                <input type="hidden" name="MAX_FILE_SIZE" value="10000000000" />
                                 <label for="file">Subir:</label><br />
                                 <input class="form-control-file" id="file" type="file" name="uploadedfile" />
                             </p>
