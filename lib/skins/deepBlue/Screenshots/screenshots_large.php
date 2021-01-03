@@ -129,7 +129,6 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                                 echo '<td colspan="2">'.$comment->comment.'</td>';
                                 echo '<td>'.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getPilotCode($pilot->code, $pilot->pilotid).'</td>';
                                 echo '</tr>';
-                                echo '<tr><td colspan="3"><hr class="comment" /></td></tr>';
                             }
                         }
                     ?>            
