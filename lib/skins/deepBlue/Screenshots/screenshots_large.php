@@ -113,27 +113,27 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
             <div class="card w-80">
                     <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Comentarios</font></b></h5>
                     <div class="card-body">
-                    
+                    <?php if(!$comments)
+                        {echo '<p>No Comments</p>';}
+                        else
+                        {
+                            echo '<tr><td colspan="3"><hr class="comment" /></td></tr>';
+                            foreach($comments as $comment){
+                                $pilot = PilotData::getPilotData($comment->pilot_id);
+                                echo '<tr>';
+                                echo '<td colspan="2">'.$comment->comment.'</td>';
+                                echo '<td>'.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getPilotCode($pilot->code, $pilot->pilotid).'</td>';
+                                echo '</tr>';
+                                echo '<tr><td colspan="3"><hr class="comment" /></td></tr>';
+                            }
+                        }
+                    ?>            
                     </div>
             </div>
             </td>
             <td></td>
         </tr>
-        <?php if(!$comments)
-            {echo '<tr><td colspan="3">No Comments</td></tr>';}
-            else
-            {
-                echo '<tr><td colspan="3"><hr class="comment" /></td></tr>';
-                foreach($comments as $comment){
-                    $pilot = PilotData::getPilotData($comment->pilot_id);
-                    echo '<tr>';
-                    echo '<td colspan="2">'.$comment->comment.'</td>';
-                    echo '<td>'.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getPilotCode($pilot->code, $pilot->pilotid).'</td>';
-                    echo '</tr>';
-                    echo '<tr><td colspan="3"><hr class="comment" /></td></tr>';
-                }
-            }
-        ?>
+        
         <tr>
             <td colspan="3"><hr /></td>
         </tr>
