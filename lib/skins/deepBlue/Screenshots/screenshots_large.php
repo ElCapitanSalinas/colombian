@@ -109,8 +109,13 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
             <td colspan="3"><hr /></td>
         </tr>
         <tr>
-            <td colspan="2"><h4>Comments:</h4>
-            Posted By:
+            <td colspan="2">
+            <div class="card w-175">
+                    <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Comentarios</font></b></h5>
+                    <div class="card-body">
+                    
+                    </div>
+            </div>
             </td>
             <td></td>
         </tr>
