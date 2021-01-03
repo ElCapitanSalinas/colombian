@@ -39,17 +39,17 @@
                             <p>
                                 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
                                 <label for="file">Subir:</label><br />
-                                <input class="mail" class="btn btn-dark" id="file" type="file" name="uploadedfile" />
+                                <input class="form-control-file" id="file" type="file" name="uploadedfile" />
                             </p>
 
                             <p>
                                 <label for="description">Ingresa una descripción para la imagen:</label><br />
-                                <textarea class="mail" name="description" class="form-control" rows="5" cols="50"></textarea>
+                                <textarea name="description" class="form-control" rows="5" cols="50"></textarea>
                             </p>
 
                             <p>
                                 <input type="hidden" name="action" value="save_upload" />
-                                <input class="mail" type="submit" class="btn btn-dark" value="Subir">
+                                <input type="submit" class="btn btn-dark" value="Subir">
                             </p>
                         </td>
                     </tr>
@@ -59,7 +59,7 @@
             <center>
                 <br />
                 <form method="link" action="<?php echo SITE_URL; ?>/index.php/screenshots">
-                    <input class="mail" type="submit" value="Volver a galería"></form>
+                    <input  type="submit" value="Volver a galería"></form>
             </center>       
 	</div>
 	</div>
