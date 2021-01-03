@@ -24,6 +24,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                 <form method="post" action="<?php echo SITE_URL ?>/index.php/Screenshots" >
                 <input type="hidden" name="action" value="last" />
                 <input type="hidden" name="id" value="<?php echo $previous->id; ?>" />
+                <br>
                 <input class="btn btn-dark" style="font-size: 12px;" type="submit" value="Imagen anterior">
                 </form>
                 <?php
@@ -52,10 +53,10 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
             <td colspan="3"><hr /></td>
         </tr>
         <tr>
-            <td width="70%"valign="top"><h4>Screenshot By: <?php echo $pilot->firstname.' '.$pilot->lastname.' - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid); ?></h4></td>
+            <td width="70%"valign="top"><h4>Imagen por: <?php echo $pilot->firstname.' '.$pilot->lastname.' - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid); ?></h4></td>
             
             <td width="15%" valign="bottom" align="center">
-                <b>Rating: </b><?php echo $screenshot->rating; ?>
+                <b>Votos: </b><?php echo $screenshot->rating; ?>
             </td>
             <td  width="15%" valign="bottom">
                 <?php
