@@ -48,7 +48,7 @@ foreach($screenshots as $screenshot)
                                         <input type="hidden" name="id" value="'.$screenshot->id.'" />
                                         <input type="hidden" name="pid" value="'.$pilot->pilotid.'" />
                                         <input type="hidden" name="action" value="approve_screenshot" />
-                                        <input class="btn btn-success" style="font-size: 12px;" type="submit" value="Approve Screenshot!">
+                                        <input class="btn btn-success" style="font-size: 12px;" type="submit" value="Aprobar">
                                         </form>
                                         <br /><br />
                                         <form action="'.SITE_URL.'/index.php/Screenshots" method="post" enctype="multipart/form-data">
@@ -56,7 +56,7 @@ foreach($screenshots as $screenshot)
                                         <input type="hidden" name="id" value="'.$screenshot->id.'" />
                                         <input type="hidden" name="pid" value="'.$pilot->pilotid.'" />
                                         <input type="hidden" name="action" value="reject_screenshot" />
-                                        <input class="btn btn-error" style="font-size: 12px;" type="submit" value="Reject Screenshot">
+                                        <input class="btn btn-danger" style="font-size: 12px;" type="submit" value="Rechazar">
                                     </td>';
                               echo '</tr>';
                               echo '</table>
