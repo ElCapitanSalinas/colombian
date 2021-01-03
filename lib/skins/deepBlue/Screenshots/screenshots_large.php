@@ -110,6 +110,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
         </tr>
         <tr>
             <td>
+            <center>
             <div class="card w-80">
                     <h5 class="card-header" style="background-color: #0A1437;"><b><font color="#FFFFFF"><i class="fa fa-star" fa-lg style="color:#FFFFFF"></i> Comentarios</font></b></h5>
                     <div class="card-body">
@@ -122,7 +123,6 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                         {echo '<p>No Comments</p>';}
                         else
                         {
-                            echo '<tr><td colspan="3"><hr class="comment" /></td></tr>';
                             foreach($comments as $comment){
                                 $pilot = PilotData::getPilotData($comment->pilot_id);
                                 echo '<tr>';
@@ -135,6 +135,7 @@ $pilot = PilotData::getPilotData($screenshot->pilot_id);
                     </div>
                     </table>
             </div>
+            </center>
             </td>
             <td></td>
         </tr>
