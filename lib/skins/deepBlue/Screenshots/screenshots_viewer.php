@@ -57,7 +57,7 @@ else {
         echo '<td width="25%" valign="top"><br />
                     Vistas: '.$screenshot->views.' - Calificación: '.$screenshot->rating.'<br /><br />
                     <a href="'.SITE_URL.'/index.php/Screenshots/large_screenshot?id='.$screenshot->id.'">
-                        <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" border="0" width="400px" alt="Por: '.$pilot->firstname.' '.$pilot->lastname.'" /></a>
+                        <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" border="0" width="700px" alt="Por: '.$pilot->firstname.' '.$pilot->lastname.'" /></a>
                             <br />
                     <u>Enviada por:</u> '.$pilot->firstname.' '.$pilot->lastname.' - '.PilotData::getpilotcode($pilot->code, $pilot->pilotid).'<br />
                     <u>Fecha:</u> '.date('m/d/Y', strtotime($screenshot->date_uploaded)).'<br />
