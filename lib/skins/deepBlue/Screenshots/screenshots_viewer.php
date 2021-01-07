@@ -64,7 +64,7 @@ else {
                     <u>Descripción:</u> '.$screenshot->file_description.'<br /><br />
                 </td>';
         $tiles++;
-        if ($tiles == '4') {  echo '</tr>'; $tiles=0; }
+        if ($tiles == '3') {  echo '</tr>'; $tiles=0; }
     }
     echo '</table>';
 }
