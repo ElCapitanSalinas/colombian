@@ -37,7 +37,7 @@ foreach($screenshots as $screenshot)
                         <table class="profiletop">
                         <tr>
                                     <td>
-                                        <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" width="25%" height="28%" alt="screenshot" /><br /><br />
+                                        <img src="'.SITE_URL.'/pics/'.$screenshot->file_name.'" width="25%" alt="screenshot" /><br /><br />
                                     </td>
                                     <td>
                                         Nombre del archivo: '.$screenshot->file_name.'<br /><br />
