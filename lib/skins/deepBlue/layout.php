@@ -88,7 +88,7 @@
                   <a href="http://co.ivao.aero"><img src="https://co.ivao.aero/img/co.svg" width="25%"/></a>
                   <br>
                   <br>
-                  <!-- <a href="https://www.ivao.aero/db/airline/airline.asp?Id=20909"><img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="25%"/></a> --> -->
+                  <!-- <a href="https://www.ivao.aero/db/airline/airline.asp?Id=20909"><img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="25%"/></a> -->
                 </div>
               </div>
             </div>
