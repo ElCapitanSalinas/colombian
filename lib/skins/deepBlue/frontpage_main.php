@@ -1,9 +1,7 @@
 <head>
-    <script>
-        $(document).ready(function(){
-            $("#exampleModal").modal('show');
-        });
-    </script>
+    <script>$('#exampleModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})</script>
 </head>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
