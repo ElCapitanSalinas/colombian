@@ -1,3 +1,36 @@
+<head>
+    <script>
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
+</head>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading"><b>Estamos certificados!</b></h4>
+            <p>Luego de meses de trabajo hemos sido certificados en IVAO, gracias a todas las personas que se han empeñado en ayudarnos a crecer!</p>
+            <hr>
+            <br>
+          </div>
+          <center><a href="http://www.ivao.aero/db/airline/airline.asp?id=23118"><img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="50%" alt=""></a></center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <br>
 <!-- Start Downloads -->
@@ -20,7 +53,6 @@
          ?>
          <!-- End Downloads -->
 <br>
-
 <div class="row">
   <div class="col-lg-2">
   </div>
