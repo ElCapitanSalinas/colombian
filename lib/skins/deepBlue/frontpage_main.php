@@ -1,10 +1,6 @@
-<head>
-    <script>$('#exampleModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})</script>
-</head>
+
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
