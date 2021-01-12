@@ -201,7 +201,7 @@
 
 <script>
     $(document).ready(function(){
-      $('#exampleModal').modal('show');
+      $('#LogoutModal').modal('show');
     })
 </script>
 
