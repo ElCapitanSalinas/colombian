@@ -1,6 +1,10 @@
-
+<script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
 <!-- Modal -->
-<div class="modal fade">
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
