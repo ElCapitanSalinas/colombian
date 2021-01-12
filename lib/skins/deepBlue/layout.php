@@ -48,8 +48,35 @@
 
             </div>
 
+
 </header>
 
+
+<!-- Modal -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Buenas noticias!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading"><b>Estamos certificados!</b></h4>
+            <p>Luego de meses de trabajo hemos sido certificados en IVAO, gracias a todas las personas que se han empeñado en ayudarnos a crecer!</p>
+            <hr>
+            <br>
+          </div>
+          <center><a href="http://www.ivao.aero/db/airline/airline.asp?id=23118"><img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="50%" alt=""></a></center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
  <?php echo $page_content;?>
                     </div>
@@ -173,37 +200,7 @@
 <!-- End Logout Modal -->
     </div>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Buenas noticias!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading"><b>Estamos certificados!</b></h4>
-            <p>Luego de meses de trabajo hemos sido certificados en IVAO, gracias a todas las personas que se han empeñado en ayudarnos a crecer!</p>
-            <hr>
-            <br>
-          </div>
-          <center><a href="http://www.ivao.aero/db/airline/airline.asp?id=23118"><img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="50%" alt=""></a></center>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<script>
-    $(document).ready(function(){
-      $('#LogoutModal').modal('show');
-    })
-</script>
 
 </body>
 </html>
