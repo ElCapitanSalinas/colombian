@@ -50,7 +50,7 @@
 
             <script>
     $(document).ready(function(){
-        $("#myModal").modal('show');
+        $('#myModal').trigger('focus')
     });
 </script>
 </header>
