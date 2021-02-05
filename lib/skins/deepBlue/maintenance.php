@@ -10,6 +10,7 @@
 </style>
 </head>
 <body>
+    <br>
     <div class="alert alert-danger" role="alert">
     <h4 class="alert-heading">El sistema se encuentra caido</h4>
     <p>Parece que una clase de hpta está haciendo algo con el servidor.</p>
