@@ -5,10 +5,8 @@
 <html>
 <head>
 <title>Sistema caido. - Colombian Airways.</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <style type="text/css">
-body { font-family: verdana;  font-size: 16px; color: #001B6B }
-h1 { font-weight:16px;font-size:18px;color:#6B001B;margin:0 0 4px 0; }
-div#codon_crit_error { border:#999 1px solid;background-color:#fff;padding:20px 20px 12px 20px;}
 </style>
 </head>
 <body>
