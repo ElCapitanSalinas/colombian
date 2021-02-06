@@ -13,6 +13,10 @@ Options All -Indexes
 #RewriteCond %{REQUEST_FILENAME} !-d
 #RewriteRule ^(.*)$ index.php?q=$1  [QSA,L]
 
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
 # Security, block users from being able to see source files
 <FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh|tpl)$">
  Order Allow,Deny
