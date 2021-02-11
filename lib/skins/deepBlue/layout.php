@@ -111,8 +111,8 @@
                 <div class="col-sm">
                   <br>
                   <br>
-                  <a href="http://ivao.aero"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/IVAO_Logo.png/1200px-IVAO_Logo.png" width="50%"/></a>
-                  <a href="http://co.ivao.aero"><img src="https://co.ivao.aero/img/co.svg" width="50%"/></a>
+                  <a href="http://ivao.aero"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/IVAO_Logo.png/1200px-IVAO_Logo.png" width="25%"/></a>
+                  <a href="http://co.ivao.aero"><img src="https://co.ivao.aero/img/co.svg" width="25%"/></a>
                   <br>
                   <br>
                   <!-- <a href="https://www.ivao.aero/db/airline/airline.asp?Id=20909"><img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="25%"/></a> -->
