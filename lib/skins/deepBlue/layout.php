@@ -89,7 +89,7 @@
                   <img src="https://media.discordapp.net/attachments/501578269355671553/762892841898344468/White_logo.png" width="75%"/>
                   <br>
                   <br>
-                  <img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="30%"/>
+                  <img src="https://ivao.aero/images/svg_logos/VA_logo.svg" width="50%"/>
                 </div>
                 <div class="col-sm">
                   <br>
