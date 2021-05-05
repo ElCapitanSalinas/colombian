@@ -42,7 +42,7 @@ Config::Set('PAGE_ENCODING', 'ISO-8859-1');
 Config::Set('URL_REWRITE', false);
 
 # Maintenance mode - this disables the site to non-admins
-Config::Set('MAINTENANCE_MODE', false);
+Config::Set('MAINTENANCE_MODE', true);
 Config::Set('MAINTENANCE_MESSAGE', 'We are currently down for maintenance, please check back soon.');
 
 /*	Whether you have the /admin/maintenance.php script added into cron.
