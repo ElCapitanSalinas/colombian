@@ -46,7 +46,7 @@ Config::Set('PAGE_ENCODING', 'UTF-8');
 Config::Set('DB_CHARSET_NAME', 'utf8');
 
 # Maintenance mode - this disables the site to non-admins
-Config::Set('MAINTENANCE_MODE', false);
+Config::Set('MAINTENANCE_MODE', true);
 Config::Set('MAINTENANCE_MESSAGE', 'We are currently down for maintenance, please check back soon.');
 
 # This is your airline's twitter account, if it exists
